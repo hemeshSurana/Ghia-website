@@ -43,6 +43,8 @@
 
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
 
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -85,23 +87,24 @@
             padding: 0;
             font-family: Arial, sans-serif;
         }
+
         header {
             background-color: #0066cc;
             padding: 10px 20px;
             color: white;
         }
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+
         a {
             color: white;
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
-        }
+
 
 
 
@@ -110,6 +113,7 @@
             margin: 0;
             padding: 0;
         }
+
         .top-bar {
             background-color: #0077be;
             color: white;
@@ -117,6 +121,7 @@
             padding: 10px 0;
             font-size: 14px;
         }
+
         .footer {
             background-color: #333;
             color: white;
@@ -125,12 +130,17 @@
             justify-content: space-between;
             align-items: center;
         }
-        .address, .social-icons, .phone {
+
+        .address,
+        .social-icons,
+        .phone {
             flex: 1;
         }
+
         .social-icons {
             text-align: center;
         }
+
         .social-icons a {
             color: white;
             text-decoration: none;
@@ -138,18 +148,21 @@
             border: 1px solid white;
             padding: 5px 10px;
         }
+
         .nav {
             background-color: #333;
             color: white;
             padding: 10px 0;
             text-align: center;
         }
+
         .nav a {
             color: white;
             text-decoration: none;
             margin: 0 10px;
             font-size: 12px;
         }
+
         .copyright {
             background-color: #333;
             color: #777;
@@ -157,6 +170,7 @@
             padding: 10px 0;
             font-size: 12px;
         }
+
         .accessibility {
             position: fixed;
             left: 10px;
@@ -171,138 +185,159 @@
 
 
         .home-slides {
-        position: relative;
-        overflow: hidden;
-    }
-    .main-slides-item {
-        background-image: url('https://example.com/your-background-image.jpg'); / Replace with your image URL /
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 600px; / Adjust as needed /
-        display: flex;
-        align-items: center;
-    }
-    .main-slides-content {
-        background-color: rgba(255, 255, 255, 0.8); / Semi-transparent white background /
-        padding: 30px;
-        border-radius: 10px;
-        max-width: 600px; / Adjust as needed /
-    }
-    .sub-title {
-        display: flex;
-        align-items: center;
-        font-size: 18px;
-        color: #0066cc;
-        margin-bottom: 10px;
-    }
-    .sub-title i {
-        margin-right: 10px;
-    }
-    h1 {
-        font-size: 36px;
-        color: #333;
-        margin-bottom: 20px;
-    }
-    .slides-btn {
-        margin-top: 20px;
-    }
-    .default-btn {
-        display: inline-block;
-        padding: 10px 0;
-        width: 400px;
-        font-size: 24px;
-        border-radius: 10px;
-        text-align: center;
-        background-color: #0066cc;
-        color: white;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-    }
-    .default-btn:hover {
-        background-color: #0055aa;
-    }
+            position: relative;
+            overflow: hidden;
+        }
+
+        .main-slides-item {
+            background-image: url('https://example.com/your-background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+        }
+
+        .main-slides-content {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+        }
+
+        .sub-title {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+
+        .sub-title i {
+            margin-right: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .slides-btn {
+            margin-top: 20px;
+        }
+
+        .default-btn {
+            display: inline-block;
+            padding: 10px 0;
+            width: 400px;
+            font-size: 24px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #0066cc;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .default-btn:hover {
+            background-color: #0055aa;
+        }
 
 
 
 
-    #heyen-info-section {
-        background-color: #0077be;
-        padding: 20px 0;
-        font-family: Arial, sans-serif;
-    }
-    #heyen-info-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-    }
-    .heyen-card {
-        width: 48%;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-    #heyen-bio-card {
-        background-color: white;
-        display: flex;
-        align-items: center;
-        padding: 20px;
-    }
-    #heyen-bio-image {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin-right: 20px;
-    }
-    #heyen-bio-content {
-        flex: 1;
-    }
-    #heyen-bio-name {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    #heyen-bio-text {
-        font-size: 14px;
-        line-height: 1.4;
-    }
-    #heyen-contact-card {
-        background-color: #4CAF50;
-        color: white;
-        padding: 20px;
-        position: relative;
-    }
-    #heyen-contact-name {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-    #heyen-contact-address,
-    #heyen-contact-phone {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-    #heyen-contact-icon {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        font-size: 24px;
-    }
-    #heyen-bio-arrow {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        font-size: 24px;
-        color: #4CAF50;
-    }
+        #heyen-info-section {
+            background-color: #0077be;
+            padding: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #heyen-info-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .heyen-card {
+            width: 48%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #heyen-bio-card {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #heyen-bio-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        #heyen-bio-content {
+            flex: 1;
+        }
+
+        #heyen-bio-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #heyen-bio-text {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        #heyen-contact-card {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+
+        #heyen-contact-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        #heyen-contact-address,
+        #heyen-contact-phone {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        #heyen-contact-icon {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 24px;
+        }
+
+        #heyen-bio-arrow {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #4CAF50;
+        }
     </style>
 
 <body>
     <header class="top-header">
         <nav>
             <a href="tel:9406928411" title="Call Us">(940) 692-8411</a>
-            <a href="https://maps.google.com/?q=4501+Call+Field+Road+Wichita+Falls,+TX+76308" title="Our Location">4501 Call Field Road, Wichita Falls, TX 76308</a>
+            <a href="https://maps.google.com/?q=4501+Call+Field+Road+Wichita+Falls,+TX+76308" title="Our Location">4501
+                Call Field Road, Wichita Falls, TX 76308</a>
         </nav>
     </header>
 
@@ -313,7 +348,8 @@
                     <div class="main-responsive-menu">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="https://www.wichitafallstxdentist.com/wp-content/uploads/sites/3693/2019/09/logo.png" class="main-logo" alt="logo" style="width: 500px; height: auto;">
+                                <img src="https://www.wichitafallstxdentist.com/wp-content/uploads/sites/3693/2019/09/logo.png"
+                                    class="main-logo" alt="logo" style="width: 500px; height: auto;">
 
                             </a>
                         </div>
@@ -321,16 +357,16 @@
                 </div>
             </div>
 
-            
+
             <div class="container">
-                
+
                 <nav class="navbar navbar-expand-md navbar-light">
                     <div class="collapse navbar-collapse mean-menu justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
-                           
+
                             <li class="nav-item">
                                 <a class="nav-link">
                                     Patient Information
@@ -343,8 +379,7 @@
                                         <a href="whychooseus.html " class="nav-link">Why choose Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="newpatients.html "
-                                            class="nav-link">New Patients</a>
+                                        <a href="newpatients.html " class="nav-link">New Patients</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="scheduling.html " class="nav-link">Scheduling</a>
@@ -353,24 +388,19 @@
                                         <a href="insuranceinformation.html " class="nav-link">Insurance Information</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="patientregistration.html"
-                                            class="nav-link">Patient Registration</a>
+                                        <a href="patientregistration.html" class="nav-link">Patient Registration</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="adapatienteducation.html"
-                                            class="nav-link">ADA Patient Education</a>
+                                        <a href="adapatienteducation.html" class="nav-link">ADA Patient Education</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="infectioncontrol.html"
-                                            class="nav-link">Infection Control</a>
+                                        <a href="infectioncontrol.html" class="nav-link">Infection Control</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="advancedtechnology.html"
-                                            class="nav-link">Advanced Technology</a>
+                                        <a href="advancedtechnology.html" class="nav-link">Advanced Technology</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="nitrousoxide.html"
-                                            class="nav-link">Nitrous Oxide</a>
+                                        <a href="nitrousoxide.html" class="nav-link">Nitrous Oxide</a>
                                     </li>
                                 </ul>
                             </li>
@@ -380,7 +410,8 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="dentalexamsandcheckups.html" class="nav-link">Dental Exams and Check-Ups</a>
+                                        <a href="dentalexamsandcheckups.html" class="nav-link">Dental Exams and
+                                            Check-Ups</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="oralhygiene.html" class="nav-link">Oral Hygiene</a>
@@ -395,14 +426,15 @@
                                         <a href="dentalsealants.html" class="nav-link">Dental Sealants</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="periodontalmaintenance.html" class="nav-link">Periodontal Maintenance</a>
+                                        <a href="periodontalmaintenance.html" class="nav-link">Periodontal
+                                            Maintenance</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="deepteethcleaning.html" class="nav-link">Deep Teeth Cleaning</a>
                                     </li>
                                 </ul>
                             </li>
-                            
+
                             <li class="nav-item">
                                 <a class="nav-link">
                                     Restorative Dentistry
@@ -427,7 +459,8 @@
                                         <a href="immediatedentures.html" class="nav-link">Immediate Dentures</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="implantretaindentures.html" class="nav-link">Implant Retain Dentures</a>
+                                        <a href="implantretaindentures.html" class="nav-link">Implant Retain
+                                            Dentures</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="partialdentures.html" class="nav-link">Partial Dentures</a>
@@ -449,7 +482,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            
+
                             <li class="nav-item">
                                 <a class="nav-link">
                                     Cosmetic Dentistry
@@ -488,55 +521,86 @@
                             <li class="nav-item">
                                 <a href="contactus.html" class="nav-link">Contact Us</a>
                             </li>
-                            
+
                     </div>
                 </nav>
             </div>
-           
+
         </div>
     </div>
 
 
     <!DOCTYPE html>
     <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Non-Surgical Root Canal</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                line-height: 1.6;
-            }
-            h1, h2, h3 {
-                color: #000000;
-            }
-            p {
-                margin: 0.5em 0;
-            }
-        </style>
+
     </head>
-    <body>
-    
-        <h1>Non-Surgical Root Canal</h1>
-        
-        <h2>What is a root canal?</h2>
-        <p>A root canal is one of the most common dental procedures performed, well over 14 million every year. This simple treatment can save your natural teeth and prevent the need for dental implants or bridges.</p>
-        <p>At the center of your tooth is pulp. Pulp is a collection of blood vessels that helps to build the surrounding tooth. Infection of the pulp can be caused by trauma to the tooth, deep decay, cracks and chips, or repeated dental procedures. Symptoms of the infection can be identified as visible injury or swelling of the tooth, sensitivity to temperature, or pain in the tooth and gums.</p>
-    
-        <h2>How is a root canal performed?</h2>
-        <p>If you experience any of these symptoms, your dentist will most likely recommend non-surgical treatment to eliminate the diseased pulp. This injured pulp is removed and the root canal system is thoroughly cleaned and sealed. This therapy usually involves local anesthesia and may be completed in one or more visits depending on the treatment required. Success for this type of treatment occurs in about 90% of cases. If your tooth is not amenable to endodontic treatment or the chance of success is unfavorable, you will be informed at the time of consultation or when a complication becomes evident during or after treatment.</p>
-        <p>We use local anesthesia to eliminate discomfort. In addition, we will provide nitrous oxide analgesia if indicated. You will be able to drive home after your treatment, and you probably will be comfortable returning to your normal routine.</p>
-    
-        <h2>What happens after root canal treatment?</h2>
-        <p>When your root canal therapy has been completed, a record of your treatment will be sent to your restorative dentist. You should contact their office for a follow-up restoration within a few weeks of completion at our office. Your restorative dentist will decide on what type of restoration is necessary to protect your tooth. It is rare for endodontic patients to experience complications after routine endodontic treatment or microsurgery. If a problem does occur, however, we are available at all times to respond. To prevent further decay, continue to practice good dental hygiene.</p>
-    
-        <h2>How much will root canal treatment cost?</h2>
-        <p>The cost associated with this procedure can vary depending on factors such as the severity of damage to the affected tooth and which tooth is affected. In general, endodontic treatment is much less expensive than tooth removal and replacement with an artificial tooth.</p>
-    
+
+    <body class="font-sans leading-relaxed bg-gray-50 text-gray-800 ">
+        <div class="max-w-3xl mx-auto p-2">
+            <h1 class="text-4xl font-bold text-center mt-3 mb-4 text-gray-900 ">Non-Surgical Root Canal</h1>
+
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">What is a root canal?</h2>
+            <p class="mb-4">
+                A root canal is one of the most common dental procedures performed, well over 14 million every year.
+                This
+                simple treatment can save your natural teeth and prevent the need for dental implants or bridges.
+            </p>
+            <p class="mb-6">
+                At the center of your tooth is pulp. Pulp is a collection of blood vessels that helps to build the
+                surrounding tooth. Infection of the pulp can be caused by trauma to the tooth, deep decay, cracks and
+                chips,
+                or repeated dental procedures. Symptoms of the infection can be identified as visible injury or swelling
+                of
+                the tooth, sensitivity to temperature, or pain in the tooth and gums.
+            </p>
+
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">How is a root canal performed?</h2>
+            <p class="mb-4">
+                If you experience any of these symptoms, your dentist will most likely recommend non-surgical treatment
+                to
+                eliminate the diseased pulp. This injured pulp is removed and the root canal system is thoroughly
+                cleaned
+                and sealed. This therapy usually involves local anesthesia and may be completed in one or more visits
+                depending on the treatment required. Success for this type of treatment occurs in about 90% of cases. If
+                your tooth is not amenable to endodontic treatment or the chance of success is unfavorable, you will be
+                informed at the time of consultation or when a complication becomes evident during or after treatment.
+            </p>
+            <p class="mb-6">
+                We use local anesthesia to eliminate discomfort. In addition, we will provide nitrous oxide analgesia if
+                indicated. You will be able to drive home after your treatment, and you probably will be comfortable
+                returning to your normal routine.
+            </p>
+
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">What happens after root canal treatment?</h2>
+            <p class="mb-4">
+                When your root canal therapy has been completed, a record of your treatment will be sent to your
+                restorative
+                dentist. You should contact their office for a follow-up restoration within a few weeks of completion at
+                our
+                office. Your restorative dentist will decide on what type of restoration is necessary to protect your
+                tooth.
+                It is rare for endodontic patients to experience complications after routine endodontic treatment or
+                microsurgery. If a problem does occur, however, we are available at all times to respond. To prevent
+                further
+                decay, continue to practice good dental hygiene.
+            </p>
+
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">How much will root canal treatment cost?</h2>
+            <p class="mb-4">
+                The cost associated with this procedure can vary depending on factors such as the severity of damage to
+                the
+                affected tooth and which tooth is affected. In general, endodontic treatment is much less expensive than
+                tooth removal and replacement with an artificial tooth.
+            </p>
+        </div>
     </body>
+
     </html>
-    
 
 
 
@@ -545,7 +609,7 @@
 
 
 
-    
+
 
 
 
@@ -567,8 +631,8 @@
         </div>
     </footer>
     <nav class="nav">
-      
-     
+
+
         <a href="index.html">HOME</a>
         <a href="patientinformation.html">PATIENT INFORMATION</a>
         <a href="preventativecare.html">PREVENTATIVE CARE</a>
@@ -577,11 +641,11 @@
         <a href="aboutus.html">ABOUT US</a>
         <a href="contactus.html">CONTACT US</a>
         <a href="disclaimer.html">DISCLAIMER</a>
-        
-       
+
+
     </nav>
-    
-   
+
+
 
 
 
@@ -628,5 +692,3 @@
 </body>
 
 </html>
-
-

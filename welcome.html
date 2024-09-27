@@ -43,6 +43,8 @@
 
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
 
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -88,23 +90,27 @@
             padding: 0;
             font-family: Arial, sans-serif;
         }
+
         header {
-            background-color: #0066cc;
+            background-color: #333;
             padding: 10px 20px;
             color: white;
         }
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+
         a {
             color: white;
             text-decoration: none;
         }
-        a:hover {
+
+        /* a:hover {
             text-decoration: underline;
-        }
+        } */
 
 
 
@@ -113,6 +119,7 @@
             margin: 0;
             padding: 0;
         }
+
         .top-bar {
             background-color: #0077be;
             color: white;
@@ -120,6 +127,7 @@
             padding: 10px 0;
             font-size: 14px;
         }
+
         .footer {
             background-color: #333;
             color: white;
@@ -128,12 +136,17 @@
             justify-content: space-between;
             align-items: center;
         }
-        .address, .social-icons, .phone {
+
+        .address,
+        .social-icons,
+        .phone {
             flex: 1;
         }
+
         .social-icons {
             text-align: center;
         }
+
         .social-icons a {
             color: white;
             text-decoration: none;
@@ -141,18 +154,21 @@
             border: 1px solid white;
             padding: 5px 10px;
         }
+
         .nav {
             background-color: #333;
             color: white;
             padding: 10px 0;
             text-align: center;
         }
+
         .nav a {
             color: white;
             text-decoration: none;
             margin: 0 10px;
             font-size: 12px;
         }
+
         .copyright {
             background-color: #333;
             color: #777;
@@ -160,6 +176,7 @@
             padding: 10px 0;
             font-size: 12px;
         }
+
         .accessibility {
             position: fixed;
             left: 10px;
@@ -174,174 +191,202 @@
 
 
         .home-slides {
-        position: relative;
-        overflow: hidden;
-    }
-    .main-slides-item {
-        background-image: url('https://example.com/your-background-image.jpg'); /* Replace with your image URL */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 600px; /* Adjust as needed */
-        display: flex;
-        align-items: center;
-    }
-    .main-slides-content {
-        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-        padding: 30px;
-        border-radius: 10px;
-        max-width: 600px; /* Adjust as needed */
-    }
-    .sub-title {
-        display: flex;
-        align-items: center;
-        font-size: 18px;
-        color: #0066cc;
-        margin-bottom: 10px;
-    }
-    .sub-title i {
-        margin-right: 10px;
-    }
-    h1 {
-        font-size: 36px;
-        color: #333;
-        margin-bottom: 20px;
-    }
-    .slides-btn {
-        margin-top: 20px;
-    }
-    .default-btn {
-        display: inline-block;
-        padding: 10px 0;
-        width: 400px;
-        font-size: 24px;
-        border-radius: 10px;
-        text-align: center;
-        background-color: #0066cc;
-        color: white;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-    }
-    .default-btn:hover {
-        background-color: #0055aa;
-    }
+            position: relative;
+            overflow: hidden;
+        }
+
+        .main-slides-item {
+            background-image: url('https://example.com/your-background-image.jpg');
+            /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 600px;
+            /* Adjust as needed */
+            display: flex;
+            align-items: center;
+        }
+
+        .main-slides-content {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Semi-transparent white background */
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            /* Adjust as needed */
+        }
+
+        .sub-title {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+
+        .sub-title i {
+            margin-right: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .slides-btn {
+            margin-top: 20px;
+        }
+
+        .default-btn {
+            display: inline-block;
+            padding: 10px 0;
+            width: 400px;
+            font-size: 24px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #0066cc;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .default-btn:hover {
+            background-color: #0055aa;
+        }
 
 
 
 
-    #heyen-info-section {
-        background-color: #0077be;
-        padding: 20px 0;
-        font-family: Arial, sans-serif;
-    }
-    #heyen-info-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-    }
-    .heyen-card {
-        width: 48%;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-    #heyen-bio-card {
-        background-color: white;
-        display: flex;
-        align-items: center;
-        padding: 20px;
-    }
-    #heyen-bio-image {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin-right: 20px;
-    }
-    #heyen-bio-content {
-        flex: 1;
-    }
-    #heyen-bio-name {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    #heyen-bio-text {
-        font-size: 14px;
-        line-height: 1.4;
-    }
-    #heyen-contact-card {
-        background-color: #4CAF50;
-        color: white;
-        padding: 20px;
-        position: relative;
-    }
-    #heyen-contact-name {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-    #heyen-contact-address,
-    #heyen-contact-phone {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-    #heyen-contact-icon {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        font-size: 24px;
-    }
-    #heyen-bio-arrow {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        font-size: 24px;
-        color: #4CAF50;
-    }
+        #heyen-info-section {
+            background-color: #0077be;
+            padding: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #heyen-info-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .heyen-card {
+            width: 48%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #heyen-bio-card {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #heyen-bio-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        #heyen-bio-content {
+            flex: 1;
+        }
+
+        #heyen-bio-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #heyen-bio-text {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        #heyen-contact-card {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+
+        #heyen-contact-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        #heyen-contact-address,
+        #heyen-contact-phone {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        #heyen-contact-icon {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 24px;
+        }
+
+        #heyen-bio-arrow {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #4CAF50;
+        }
 
 
 
-    section {
-      background-color: #fff; /* White background for the section */
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
-    }
+        section {
+            background-color: #fff;
+            /* White background for the section */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Light shadow for better visibility */
+        }
 
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-    ul li {
-      margin: 10px 0;
-    }
+        ul li {
+            margin: 10px 0;
+        }
 
-    a {
-      text-decoration: none;
-      color: #070707; /* Standard link color */
-      font-weight: bold;
-    }
+        a {
+            text-decoration: none;
+            color: white;
+            /* Standard link color */
+            font-weight: bold;
+        }
 
-    a:hover {
-      color: #0056b3; /* Darker blue on hover */
-    }
+        a:hover {
+            color: #0056b3;
+            /* Darker blue on hover */
+        }
 
-    p {
-      line-height: 1.6;
-    }
+        p {
+            line-height: 1.6;
+        }
     </style>
 
-    
+
 <body>
     <header class="top-header">
         <nav>
             <a href="tel:9406928411" title="Call Us">(940) 692-8411</a>
-            <a href="https://maps.google.com/?q=4501+Call+Field+Road+Wichita+Falls,+TX+76308" title="Our Location">4501 Call Field Road, Wichita Falls, TX 76308</a>
+            <a href="https://maps.google.com/?q=4501+Call+Field+Road+Wichita+Falls,+TX+76308" title="Our Location">4501
+                Call Field Road, Wichita Falls, TX 76308</a>
         </nav>
     </header>
-
     <div class="navbar-area">
         <div class="main-navbar">
             <div class="main-responsive-nav">
@@ -349,7 +394,8 @@
                     <div class="main-responsive-menu">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="https://www.wichitafallstxdentist.com/wp-content/uploads/sites/3693/2019/09/logo.png" class="main-logo" alt="logo" style="width: 500px; height: auto;">
+                                <img src="https://www.wichitafallstxdentist.com/wp-content/uploads/sites/3693/2019/09/logo.png"
+                                    class="main-logo" alt="logo" style="width: 500px; height: auto;">
 
                             </a>
                         </div>
@@ -357,17 +403,15 @@
                 </div>
             </div>
 
-            
             <div class="container">
-                
                 <nav class="navbar navbar-expand-md navbar-light">
                     <div class="collapse navbar-collapse mean-menu justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
-                           
-                            <li class="nav-item">
+
+                            <li class="nav-item ">
                                 <a class="nav-link">
                                     Patient Information
                                 </a>
@@ -379,8 +423,7 @@
                                         <a href="whychooseus.html " class="nav-link">Why choose Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="newpatients.html "
-                                            class="nav-link">New Patients</a>
+                                        <a href="newpatients.html " class="nav-link">New Patients</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="scheduling.html " class="nav-link">Scheduling</a>
@@ -389,24 +432,19 @@
                                         <a href="insuranceinformation.html " class="nav-link">Insurance Information</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="patientregistration.html"
-                                            class="nav-link">Patient Registration</a>
+                                        <a href="patientregistration.html" class="nav-link">Patient Registration</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="adapatienteducation.html"
-                                            class="nav-link">ADA Patient Education</a>
+                                        <a href="adapatienteducation.html" class="nav-link">ADA Patient Education</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="infectioncontrol.html"
-                                            class="nav-link">Infection Control</a>
+                                        <a href="infectioncontrol.html" class="nav-link">Infection Control</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="advancedtechnology.html"
-                                            class="nav-link">Advanced Technology</a>
+                                        <a href="advancedtechnology.html" class="nav-link">Advanced Technology</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="nitrousoxide.html"
-                                            class="nav-link">Nitrous Oxide</a>
+                                        <a href="nitrousoxide.html" class="nav-link">Nitrous Oxide</a>
                                     </li>
                                 </ul>
                             </li>
@@ -416,7 +454,8 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="dentalexamsandcheckups.html" class="nav-link">Dental Exams and Check-Ups</a>
+                                        <a href="dentalexamsandcheckups.html" class="nav-link">Dental Exams and
+                                            Check-Ups</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="oralhygiene.html" class="nav-link">Oral Hygiene</a>
@@ -431,14 +470,15 @@
                                         <a href="dentalsealants.html" class="nav-link">Dental Sealants</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="periodontalmaintenance.html" class="nav-link">Periodontal Maintenance</a>
+                                        <a href="periodontalmaintenance.html" class="nav-link">Periodontal
+                                            Maintenance</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="teethcleaning.html" class="nav-link">Teeth Cleaning</a>
                                     </li>
                                 </ul>
                             </li>
-                            
+
                             <li class="nav-item">
                                 <a class="nav-link">
                                     Restorative Dentistry
@@ -463,7 +503,8 @@
                                         <a href="immediatedentures.html" class="nav-link">Immediate Dentures</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="implantretaindentures.html" class="nav-link">Implant Retain Dentures</a>
+                                        <a href="implantretaindentures.html" class="nav-link">Implant Retain
+                                            Dentures</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="partialdentures.html" class="nav-link">Partial Dentures</a>
@@ -485,7 +526,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            
+
                             <li class="nav-item">
                                 <a class="nav-link">
                                     Cosmetic Dentistry
@@ -524,106 +565,146 @@
                             <li class="nav-item">
                                 <a href="contactus.html" class="nav-link">Contact Us</a>
                             </li>
-                            
+
                     </div>
                 </nav>
             </div>
-           
         </div>
     </div>
-    <div>
+    </div>
 
 
-        <section>
-            <p>
-              Dr. Heyen and staff are dedicated to providing you with a pleasant visit and results that you’re proud to show off.<br>
-              Our administrative staff is ready to help you with questions about <b>scheduling</b>, <b>financial policy</b>, and <b>insurance</b>, to make that part of the process as simple as possible.
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Left Side Menu with Video Background</title>
+
+    </head>
+
+    <body class=" min-h-screen text-white">
+
+
+        <!-- Main Content Section -->
+        <section class=" p-8 text-center">
+            <h1 class="text-4xl font-bold mb-4">Welcome to Our Practice</h1>
+            <p class="text-lg mb-4">
+                Dr. Heyen and staff are dedicated to providing you with a pleasant visit and results that you’re proud
+                to
+                show off. Our administrative staff is ready to help you with questions about <b>scheduling</b>,
+                <b>financial
+                    policy</b>, and <b>insurance</b>, to make that part of the process as simple as possible.
             </p>
-          
-            <p>This section offers information from the administrative side of the practice, including:</p>
-          
-            <ul>
-              <li><a href="whychooseus.html"><b>Why Choose Us</b></a></li>
-              <li><a href="newpatients.html"><b>New Patients</b></a></li>
-              <li><a href="scheduling.html"><b>Scheduling</b></a></li>
-              <li><a href="insuranceinfo.html"><b>Insurance Information</b></a></li>
-              <li><a href="patientregistration.html"><b>Patient Registration</b></a></li>
-              <li><a href="adapatienteducation.html"><b>ADA Patient Education</b></a></li>
-              <li><a href="careandcomfort.html"><b>Care and Comfort</b></a></li>
+
+            <p class="text-lg">
+                This section offers information from the administrative side of the practice, including:
+            </p>
+
+            <ul class="list-disc list-inside space-y-2 text-lg text-gray-800">
+                <li><b>Why Choose Us</b></li>
+                <li><b>New Patients</b></li>
+                <li><b>Scheduling</b></li>
+                <li><b>Insurance Information</b></li>
+                <li><b>Patient Registration</b></li>
+                <li><b>ADA Patient Education</b></li>
+                <li><b>Care and Comfort</b></li>
             </ul>
-          </section>
-          
+        </section>
+    </body>
 
-<div class="top-bar">
-    Burkburnett TX • Henrietta TX • Archer City TX • Holliday TX • Iowa Park TX<br>
-    Vernon TX • Wichita Falls TX • Seymour TX • Electra TX
-</div>
-<footer class="footer">
-    <div class="address">
-        4501 Call Field Road<br>
-        Wichita Falls, TX 76308
+    </html>
+
+
+
+    <div
+        class="button-group flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4 mt-6 mb-3 p-4">
+        <a href="#"
+            class="w-full sm:w-auto text-center px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300">
+            Scheduling
+        </a>
+        <a href="#"
+            class="w-full sm:w-auto text-center px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300">
+            Dr. Don Heyen
+        </a>
+        <a href="#"
+            class="w-full sm:w-auto text-center px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300">
+            Contact Us
+        </a>
     </div>
-    <div class="social-icons">
-        <a href="#" aria-label="Facebook">f</a>
-        <a href="#" aria-label="Google">G</a>
+
+
+    <div class="top-bar">
+        Burkburnett TX • Henrietta TX • Archer City TX • Holliday TX • Iowa Park TX<br>
+        Vernon TX • Wichita Falls TX • Seymour TX • Electra TX
     </div>
-    <div class="phone">
-        Tel: (940) 692-8411
-    </div>
-</footer>
-<nav class="nav">
-  
- 
-    <a href="home.html">HOME</a>
-    <a href="patientinformation.html">PATIENT INFORMATION</a>
-    <a href="preventativecare.html">PREVENTATIVE CARE</a>
-    <a href="restorativedentistry.html">RESTORATIVE DENTISTRY</a>
-    <a href="cosmeticdentistry.html">COSMETIC DENTISTRY</a>
-    <a href="aboutus.html">ABOUT US</a>
-    <a href="contactus.html">CONTACT US</a>
-    <a href="disclaimer.html">DISCLAIMER</a>
-    
-   
-</nav>
+    <footer class="footer">
+        <div class="address">
+            4501 Call Field Road<br>
+            Wichita Falls, TX 76308
+        </div>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Google">G</a>
+        </div>
+        <div class="phone">
+            Tel: (940) 692-8411
+        </div>
+    </footer>
+    <nav class="nav">
 
 
+        <a href="index.html">HOME</a>
+        <a href="patientinformation.html">PATIENT INFORMATION</a>
+        <a href="preventativecare.html">PREVENTATIVE CARE</a>
+        <a href="restorativedentistry.html">RESTORATIVE DENTISTRY</a>
+        <a href="cosmeticdentistry.html">COSMETIC DENTISTRY</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="contactus.html">CONTACT US</a>
+        <a href="disclaimer.html">DISCLAIMER</a>
 
 
-<!-- footer start -->
+    </nav>
 
-<p class="tag-line">
-    &nbsp;&nbsp; Created with <i class="fi fi-sr-heart"></i> by <a href="https://www.patientxpress.us/"
-        target="_blank">
-        <img src="assets/image/logoleft.png" alt="patientxpress"></a>
-</p>
 
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
-</script>
-<script src="assets/js/jquery.min.js"></script>
+    <!-- footer start -->
 
-<script src="assets/js/bootstrap.bundle.min.js"></script>
+    <p class="tag-line">
+        &nbsp;&nbsp; Created with <i class="fi fi-sr-heart"></i> by <a href="https://www.patientxpress.us/"
+            target="_blank">
+            <img src="assets/image/logoleft.png" alt="patientxpress"></a>
+    </p>
 
-<script src="assets/js/jquery.meanmenu.js"></script>
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
 
-<script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
-<script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.meanmenu.js"></script>
 
-<script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
 
-<script src="assets/js/nice-select.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
 
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
 
-<script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/nice-select.min.js"></script>
 
-<script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
 
-<script src="assets/js/contact-form-script.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
 
-<script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
 
-<script src="assets/js/main.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
+
+    <script src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

@@ -43,6 +43,11 @@
 
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
 
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+
+
+
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -85,23 +90,25 @@
             padding: 0;
             font-family: Arial, sans-serif;
         }
+
         header {
             background-color: #0066cc;
             padding: 10px 20px;
             color: white;
         }
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+
         a {
             color: white;
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
-        }
+
+
 
 
 
@@ -110,6 +117,7 @@
             margin: 0;
             padding: 0;
         }
+
         .top-bar {
             background-color: #0077be;
             color: white;
@@ -117,6 +125,7 @@
             padding: 10px 0;
             font-size: 14px;
         }
+
         .footer {
             background-color: #333;
             color: white;
@@ -125,12 +134,17 @@
             justify-content: space-between;
             align-items: center;
         }
-        .address, .social-icons, .phone {
+
+        .address,
+        .social-icons,
+        .phone {
             flex: 1;
         }
+
         .social-icons {
             text-align: center;
         }
+
         .social-icons a {
             color: white;
             text-decoration: none;
@@ -138,18 +152,21 @@
             border: 1px solid white;
             padding: 5px 10px;
         }
+
         .nav {
             background-color: #333;
             color: white;
             padding: 10px 0;
             text-align: center;
         }
+
         .nav a {
             color: white;
             text-decoration: none;
             margin: 0 10px;
             font-size: 12px;
         }
+
         .copyright {
             background-color: #333;
             color: #777;
@@ -157,6 +174,7 @@
             padding: 10px 0;
             font-size: 12px;
         }
+
         .accessibility {
             position: fixed;
             left: 10px;
@@ -171,138 +189,163 @@
 
 
         .home-slides {
-        position: relative;
-        overflow: hidden;
-    }
-    .main-slides-item {
-        background-image: url('https://example.com/your-background-image.jpg'); /* Replace with your image URL */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 600px; /* Adjust as needed */
-        display: flex;
-        align-items: center;
-    }
-    .main-slides-content {
-        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-        padding: 30px;
-        border-radius: 10px;
-        max-width: 600px; /* Adjust as needed */
-    }
-    .sub-title {
-        display: flex;
-        align-items: center;
-        font-size: 18px;
-        color: #0066cc;
-        margin-bottom: 10px;
-    }
-    .sub-title i {
-        margin-right: 10px;
-    }
-    h1 {
-        font-size: 36px;
-        color: #333;
-        margin-bottom: 20px;
-    }
-    .slides-btn {
-        margin-top: 20px;
-    }
-    .default-btn {
-        display: inline-block;
-        padding: 10px 0;
-        width: 400px;
-        font-size: 24px;
-        border-radius: 10px;
-        text-align: center;
-        background-color: #0066cc;
-        color: white;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-    }
-    .default-btn:hover {
-        background-color: #0055aa;
-    }
+            position: relative;
+            overflow: hidden;
+        }
+
+        .main-slides-item {
+            background-image: url('https://example.com/your-background-image.jpg');
+            /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 600px;
+            /* Adjust as needed */
+            display: flex;
+            align-items: center;
+        }
+
+        .main-slides-content {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Semi-transparent white background */
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            /* Adjust as needed */
+        }
+
+        .sub-title {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+
+        .sub-title i {
+            margin-right: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .slides-btn {
+            margin-top: 20px;
+        }
+
+        .default-btn {
+            display: inline-block;
+            padding: 10px 0;
+            width: 400px;
+            font-size: 24px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #0066cc;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .default-btn:hover {
+            background-color: #0055aa;
+        }
 
 
 
 
-    #heyen-info-section {
-        background-color: #0077be;
-        padding: 20px 0;
-        font-family: Arial, sans-serif;
-    }
-    #heyen-info-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-    }
-    .heyen-card {
-        width: 48%;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-    #heyen-bio-card {
-        background-color: white;
-        display: flex;
-        align-items: center;
-        padding: 20px;
-    }
-    #heyen-bio-image {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin-right: 20px;
-    }
-    #heyen-bio-content {
-        flex: 1;
-    }
-    #heyen-bio-name {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    #heyen-bio-text {
-        font-size: 14px;
-        line-height: 1.4;
-    }
-    #heyen-contact-card {
-        background-color: #4CAF50;
-        color: white;
-        padding: 20px;
-        position: relative;
-    }
-    #heyen-contact-name {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-    #heyen-contact-address,
-    #heyen-contact-phone {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-    #heyen-contact-icon {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        font-size: 24px;
-    }
-    #heyen-bio-arrow {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        font-size: 24px;
-        color: #4CAF50;
-    }
+        #heyen-info-section {
+            background-color: #0077be;
+            padding: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #heyen-info-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .heyen-card {
+            width: 48%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #heyen-bio-card {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #heyen-bio-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        #heyen-bio-content {
+            flex: 1;
+        }
+
+        #heyen-bio-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #heyen-bio-text {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        #heyen-contact-card {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+
+        #heyen-contact-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        #heyen-contact-address,
+        #heyen-contact-phone {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        #heyen-contact-icon {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 24px;
+        }
+
+        #heyen-bio-arrow {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #4CAF50;
+        }
     </style>
 
 <body>
     <header class="top-header">
         <nav>
             <a href="tel:9406928411" title="Call Us">(940) 692-8411</a>
-            <a href="https://maps.google.com/?q=4501+Call+Field+Road+Wichita+Falls,+TX+76308" title="Our Location">4501 Call Field Road, Wichita Falls, TX 76308</a>
+            <a href="https://maps.google.com/?q=4501+Call+Field+Road+Wichita+Falls,+TX+76308" title="Our Location">4501
+                Call Field Road, Wichita Falls, TX 76308</a>
         </nav>
     </header>
 
@@ -313,7 +356,8 @@
                     <div class="main-responsive-menu">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="https://www.wichitafallstxdentist.com/wp-content/uploads/sites/3693/2019/09/logo.png" class="main-logo" alt="logo" style="width: 500px; height: auto;">
+                                <img src="https://www.wichitafallstxdentist.com/wp-content/uploads/sites/3693/2019/09/logo.png"
+                                    class="main-logo" alt="logo" style="width: 500px; height: auto;">
 
                             </a>
                         </div>
@@ -321,16 +365,16 @@
                 </div>
             </div>
 
-            
+
             <div class="container">
-                
+
                 <nav class="navbar navbar-expand-md navbar-light">
                     <div class="collapse navbar-collapse mean-menu justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
-                           
+
                             <li class="nav-item">
                                 <a class="nav-link">
                                     Patient Information
@@ -343,8 +387,7 @@
                                         <a href="whychooseus.html " class="nav-link">Why choose Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="newpatients.html "
-                                            class="nav-link">New Patients</a>
+                                        <a href="newpatients.html " class="nav-link">New Patients</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="scheduling.html " class="nav-link">Scheduling</a>
@@ -353,24 +396,19 @@
                                         <a href="insuranceinformation.html " class="nav-link">Insurance Information</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="patientregistration.html"
-                                            class="nav-link">Patient Registration</a>
+                                        <a href="patientregistration.html" class="nav-link">Patient Registration</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="adapatienteducation.html"
-                                            class="nav-link">ADA Patient Education</a>
+                                        <a href="adapatienteducation.html" class="nav-link">ADA Patient Education</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="infectioncontrol.html"
-                                            class="nav-link">Infection Control</a>
+                                        <a href="infectioncontrol.html" class="nav-link">Infection Control</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="advancedtechnology.html"
-                                            class="nav-link">Advanced Technology</a>
+                                        <a href="advancedtechnology.html" class="nav-link">Advanced Technology</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="nitrousoxide.html"
-                                            class="nav-link">Nitrous Oxide</a>
+                                        <a href="nitrousoxide.html" class="nav-link">Nitrous Oxide</a>
                                     </li>
                                 </ul>
                             </li>
@@ -380,7 +418,8 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="dentalexamsandcheckups.html" class="nav-link">Dental Exams and Check-Ups</a>
+                                        <a href="dentalexamsandcheckups.html" class="nav-link">Dental Exams and
+                                            Check-Ups</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="oralhygiene.html" class="nav-link">Oral Hygiene</a>
@@ -395,14 +434,15 @@
                                         <a href="dentalsealants.html" class="nav-link">Dental Sealants</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="periodontalmaintenance.html" class="nav-link">Periodontal Maintenance</a>
+                                        <a href="periodontalmaintenance.html" class="nav-link">Periodontal
+                                            Maintenance</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="deepteethcleaning.html" class="nav-link">Deep Teeth Cleaning</a>
                                     </li>
                                 </ul>
                             </li>
-                            
+
                             <li class="nav-item">
                                 <a class="nav-link">
                                     Restorative Dentistry
@@ -427,7 +467,8 @@
                                         <a href="immediatedentures.html" class="nav-link">Immediate Dentures</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="implantretaindentures.html" class="nav-link">Implant Retain Dentures</a>
+                                        <a href="implantretaindentures.html" class="nav-link">Implant Retain
+                                            Dentures</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="partialdentures.html" class="nav-link">Partial Dentures</a>
@@ -449,7 +490,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            
+
                             <li class="nav-item">
                                 <a class="nav-link">
                                     Cosmetic Dentistry
@@ -488,11 +529,11 @@
                             <li class="nav-item">
                                 <a href="contactus.html" class="nav-link">Contact Us</a>
                             </li>
-                            
+
                     </div>
                 </nav>
             </div>
-           
+
         </div>
     </div>
 
@@ -502,45 +543,123 @@
 
 
 
+    <section class="px-4 py-8">
+        <h2 class="text-3xl font-bold mb-4 text-center">Periodontal Maintenance</h2>
 
-    <b>Periodontal Maintenance</b><br><br>
+        <h3 class="text-xl font-semibold mb-2">Progression of Gum Disease</h3>
+        <p class="mb-4">
+            Periodontal diseases are infections of the gums, which gradually destroy the support of your natural teeth.
+            There
+            are numerous disease entities requiring different treatment approaches. Dental plaque is the primary cause
+            of gum
+            disease in genetically susceptible individuals. Daily brushing and flossing will prevent most periodontal
+            conditions.
+        </p>
 
-    <b>Progression of Gum Disease</b><br><br>
-    
-    Periodontal diseases are infections of the gums, which gradually destroy the support of your natural teeth. There are numerous disease entities requiring different treatment approaches. Dental plaque is the primary cause of gum disease in genetically susceptible individuals. Daily brushing and flossing will prevent most periodontal conditions.<br><br>
-    <p><a href="https://www.wichitafallstxdentist.com/preventative-care/gum-disease-treatment/periodontal-maintenance/?wvideo=2mpqjnd6t3"><img src="https://embed-ssl.wistia.com/deliveries/a36fa9046e1e219e93f499639612f045adfd3a94.jpg?image_play_button_size=2x&amp;image_crop_resized=320x256&amp;image_play_button=1&amp;image_play_button_color=000000e0" width="400" height="320" style="width: 400px; height: 320px;"></a></p><p><a href="https://www.wichitafallstxdentist.com/preventative-care/gum-disease-treatment/periodontal-maintenance/?wvideo=2mpqjnd6t3">Periodontal Maintenance Wichita Falls TX, Prevent Gum Disease</a></p>
-    <b>Why is oral hygiene so important?</b><br><br>
-    
-    Adults over 35 lose more teeth to gum diseases (periodontal disease) than from cavities. Three out of four adults are affected at some time in their life. The best way to prevent cavities and periodontal disease is by good tooth brushing and flossing techniques, performed daily.<br><br>
-    
-    Periodontal disease and decay are both caused by bacterial plaque. Plaque is a colorless film that sticks to your teeth at the gum line. Plaque constantly forms on your teeth. By thorough daily brushing and flossing, you can remove these germs and help prevent periodontal disease.<br><br>
-    
-    Periodontal diseases can be accelerated by a number of different factors. However, it is mainly caused by the bacteria found in dental plaque, a sticky colorless film that constantly forms on your teeth. If not carefully removed by daily brushing and flossing, plaque hardens into a rough, porous substance known as calculus (or tartar).<br><br>
-    <p><a href="https://www.wichitafallstxdentist.com/preventative-care/gum-disease-treatment/periodontal-maintenance/?wvideo=czgcrufchd"><img src="https://embed-ssl.wistia.com/deliveries/fb882ab7d84568e085de6f88304f2782c0d95d97.jpg?image_play_button_size=2x&amp;image_crop_resized=640x360&amp;image_play_button=1&amp;image_play_button_color=000000e0" width="400" height="225" style="width: 400px; height: 225px;"></a></p><p><a href="https://www.wichitafallstxdentist.com/preventative-care/gum-disease-treatment/periodontal-maintenance/?wvideo=czgcrufchd">Periodontal Maintenance Wichita Falls TX, Prevent Gum Disease</a></p>
-    <b>Other important factors affecting the health of your gums include:</b><br><br>
-    
-    <ul>
-      <li>Smoking</li><br>
-      <li>Diabetes</li><br>
-      <li>Stress</li><br>
-      <li>Clenching and grinding teeth</li><br>
-      <li>Medication</li><br>
-      <li>Poor nutrition</li><br>
-    </ul>
-    
-    <b>Periodontal Disease</b><br><br>
-    
-    Bacteria found in plaque produces toxins or poisons that irritate the gums, which may cause them to turn red, swell, and bleed easily. If this irritation is prolonged, the gums separate from the teeth, causing pockets (spaces) to form. As periodontal diseases progress, the supporting gum tissue and bone that holds teeth in place deteriorate. If left untreated, this leads to tooth loss.<br><br>
-    
-    <b>Preventing Gum Disease</b><br><br>
-    
-    The best way to prevent gum disease is effective daily brushing and flossing as well as regular professional examinations and cleanings. Unfortunately, even with the most diligent home dental care, people still can develop some form of periodontal disease. Once this disease starts, professional intervention is necessary to prevent its progress.<br><br>
-    
-    Learn more about periodontal maintenance through our ADA Patient Education library.
-    
-    <p><a href="https://www.wichitafallstxdentist.com/preventative-care/gum-disease-treatment/periodontal-maintenance/?wvideo=qhzll0lr3a"><img src="https://embed-ssl.wistia.com/deliveries/298a8c0140669bf9747229f6e96feaa8cacd447c.jpg?image_play_button_size=2x&amp;image_crop_resized=640x360&amp;image_play_button=1&amp;image_play_button_color=000000e0" width="400" height="225" style="width: 400px; height: 225px;"></a></p><p><a href="https://www.wichitafallstxdentist.com/preventative-care/gum-disease-treatment/periodontal-maintenance/?wvideo=qhzll0lr3a">Periodontal Maintenance Wichita Falls TX, Prevent Gum Disease</a></p>
+        <p class="mb-4">
+            <a
+                href="https://www.wichitafallstxdentist.com/preventative-care/gum-disease-treatment/periodontal-maintenance/?wvideo=2mpqjnd6t3">
+                <img src="https://embed-ssl.wistia.com/deliveries/a36fa9046e1e219e93f499639612f045adfd3a94.jpg?image_play_button_size=2x&amp;image_crop_resized=320x256&amp;image_play_button=1&amp;image_play_button_color=000000e0"
+                    alt="Periodontal Maintenance" class="w-96 h-56 rounded-lg shadow-md mb-4">
+            </a>
+        </p>
+        <p class="mb-4">
+            <a href="https://www.wichitafallstxdentist.com/preventative-care/gum-disease-treatment/periodontal-maintenance/?wvideo=2mpqjnd6t3"
+                class="text-blue-600 hover:underline">
+                Periodontal Maintenance Wichita Falls TX, Prevent Gum Disease
+            </a>
+        </p>
 
-    
+        <h3 class="text-xl font-semibold mb-2">Why is oral hygiene so important?</h3>
+        <p class="mb-4">
+            Adults over 35 lose more teeth to gum diseases (periodontal disease) than from cavities. Three out of four
+            adults
+            are affected at some time in their life. The best way to prevent cavities and periodontal disease is by good
+            tooth
+            brushing and flossing techniques, performed daily.
+        </p>
+
+        <p class="mb-4">
+            Periodontal disease and decay are both caused by bacterial plaque. Plaque is a colorless film that sticks to
+            your
+            teeth at the gum line. Plaque constantly forms on your teeth. By thorough daily brushing and flossing, you
+            can
+            remove these germs and help prevent periodontal disease.
+        </p>
+
+        <p class="mb-4">
+            Periodontal diseases can be accelerated by a number of different factors. However, it is mainly caused by
+            the
+            bacteria found in dental plaque, a sticky colorless film that constantly forms on your teeth. If not
+            carefully
+            removed by daily brushing and flossing, plaque hardens into a rough, porous substance known as calculus (or
+            tartar).
+        </p>
+
+        <p class="mb-4">
+            <a
+                href="https://www.wichitafallstxdentist.com/preventative-care/gum-disease-treatment/periodontal-maintenance/?wvideo=czgcrufchd">
+                <img src="https://embed-ssl.wistia.com/deliveries/fb882ab7d84568e085de6f88304f2782c0d95d97.jpg?image_play_button_size=2x&amp;image_crop_resized=640x360&amp;image_play_button=1&amp;image_play_button_color=000000e0"
+                    alt="Periodontal Maintenance" class="w-96 h-56 rounded-lg shadow-md mb-4">
+            </a>
+        </p>
+        <p class="mb-4">
+            <a href="https://www.wichitafallstxdentist.com/preventative-care/gum-disease-treatment/periodontal-maintenance/?wvideo=czgcrufchd"
+                class="text-blue-600 hover:underline">
+                Periodontal Maintenance Wichita Falls TX, Prevent Gum Disease
+            </a>
+        </p>
+
+        <h3 class="text-xl font-semibold mb-2">Other important factors affecting the health of your gums include:</h3>
+        <ul class="list-disc list-inside mb-4">
+            <li class="mb-2">Smoking</li>
+            <li class="mb-2">Diabetes</li>
+            <li class="mb-2">Stress</li>
+            <li class="mb-2">Clenching and grinding teeth</li>
+            <li class="mb-2">Medication</li>
+            <li class="mb-2">Poor nutrition</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold mb-2">Periodontal Disease</h3>
+        <p class="mb-4">
+            Bacteria found in plaque produces toxins or poisons that irritate the gums, which may cause them to turn
+            red, swell,
+            and bleed easily. If this irritation is prolonged, the gums separate from the teeth, causing pockets
+            (spaces) to
+            form. As periodontal diseases progress, the supporting gum tissue and bone that holds teeth in place
+            deteriorate. If
+            left untreated, this leads to tooth loss.
+        </p>
+
+        <h3 class="text-xl font-semibold mb-2">Preventing Gum Disease</h3>
+        <p class="mb-4">
+            The best way to prevent gum disease is effective daily brushing and flossing as well as regular professional
+            examinations and cleanings. Unfortunately, even with the most diligent home dental care, people still can
+            develop
+            some form of periodontal disease. Once this disease starts, professional intervention is necessary to
+            prevent its
+            progress.
+        </p>
+
+        <p class="mb-4">
+            Learn more about periodontal maintenance through our ADA Patient Education library.
+        </p>
+
+        <p class="mb-4">
+            <a
+                href="https://www.wichitafallstxdentist.com/preventative-care/gum-disease-treatment/periodontal-maintenance/?wvideo=qhzll0lr3a">
+                <img src="https://embed-ssl.wistia.com/deliveries/298a8c0140669bf9747229f6e96feaa8cacd447c.jpg?image_play_button_size=2x&amp;image_crop_resized=640x360&amp;image_play_button=1&amp;image_play_button_color=000000e0"
+                    alt="Periodontal Maintenance" class="w-96 h-56 rounded-lg shadow-md mb-4">
+            </a>
+        </p>
+        <p class="mb-4">
+            <a href="https://www.wichitafallstxdentist.com/preventative-care/gum-disease-treatment/periodontal-maintenance/?wvideo=qhzll0lr3a"
+                class="text-blue-600 hover:underline">
+                Periodontal Maintenance Wichita Falls TX, Prevent Gum Disease
+            </a>
+        </p>
+    </section>
+
 
 
 
@@ -562,8 +681,8 @@
         </div>
     </footer>
     <nav class="nav">
-      
-     
+
+
         <a href="index.html">HOME</a>
         <a href="patientinformation.html">PATIENT INFORMATION</a>
         <a href="preventativecare.html">PREVENTATIVE CARE</a>
@@ -572,11 +691,11 @@
         <a href="aboutus.html">ABOUT US</a>
         <a href="contactus.html">CONTACT US</a>
         <a href="disclaimer.html">DISCLAIMER</a>
-        
-       
+
+
     </nav>
-    
-   
+
+
 
 
 
@@ -623,4 +742,3 @@
 </body>
 
 </html>
-

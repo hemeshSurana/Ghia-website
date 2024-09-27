@@ -42,7 +42,7 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css'>
 
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -85,23 +85,24 @@
             padding: 0;
             font-family: Arial, sans-serif;
         }
+
         header {
             background-color: #0066cc;
             padding: 10px 20px;
             color: white;
         }
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+
         a {
             color: white;
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
-        }
+
 
 
 
@@ -110,6 +111,7 @@
             margin: 0;
             padding: 0;
         }
+
         .top-bar {
             background-color: #0077be;
             color: white;
@@ -117,6 +119,7 @@
             padding: 10px 0;
             font-size: 14px;
         }
+
         .footer {
             background-color: #333;
             color: white;
@@ -125,12 +128,17 @@
             justify-content: space-between;
             align-items: center;
         }
-        .address, .social-icons, .phone {
+
+        .address,
+        .social-icons,
+        .phone {
             flex: 1;
         }
+
         .social-icons {
             text-align: center;
         }
+
         .social-icons a {
             color: white;
             text-decoration: none;
@@ -138,18 +146,21 @@
             border: 1px solid white;
             padding: 5px 10px;
         }
+
         .nav {
             background-color: #333;
             color: white;
             padding: 10px 0;
             text-align: center;
         }
+
         .nav a {
             color: white;
             text-decoration: none;
             margin: 0 10px;
             font-size: 12px;
         }
+
         .copyright {
             background-color: #333;
             color: #777;
@@ -157,6 +168,7 @@
             padding: 10px 0;
             font-size: 12px;
         }
+
         .accessibility {
             position: fixed;
             left: 10px;
@@ -171,138 +183,159 @@
 
 
         .home-slides {
-        position: relative;
-        overflow: hidden;
-    }
-    .main-slides-item {
-        background-image: url('https://example.com/your-background-image.jpg'); / Replace with your image URL /
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 600px; / Adjust as needed /
-        display: flex;
-        align-items: center;
-    }
-    .main-slides-content {
-        background-color: rgba(255, 255, 255, 0.8); / Semi-transparent white background /
-        padding: 30px;
-        border-radius: 10px;
-        max-width: 600px; / Adjust as needed /
-    }
-    .sub-title {
-        display: flex;
-        align-items: center;
-        font-size: 18px;
-        color: #0066cc;
-        margin-bottom: 10px;
-    }
-    .sub-title i {
-        margin-right: 10px;
-    }
-    h1 {
-        font-size: 36px;
-        color: #333;
-        margin-bottom: 20px;
-    }
-    .slides-btn {
-        margin-top: 20px;
-    }
-    .default-btn {
-        display: inline-block;
-        padding: 10px 0;
-        width: 400px;
-        font-size: 24px;
-        border-radius: 10px;
-        text-align: center;
-        background-color: #0066cc;
-        color: white;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-    }
-    .default-btn:hover {
-        background-color: #0055aa;
-    }
+            position: relative;
+            overflow: hidden;
+        }
+
+        .main-slides-item {
+            background-image: url('https://example.com/your-background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+        }
+
+        .main-slides-content {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+        }
+
+        .sub-title {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+
+        .sub-title i {
+            margin-right: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .slides-btn {
+            margin-top: 20px;
+        }
+
+        .default-btn {
+            display: inline-block;
+            padding: 10px 0;
+            width: 400px;
+            font-size: 24px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #0066cc;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .default-btn:hover {
+            background-color: #0055aa;
+        }
 
 
 
 
-    #heyen-info-section {
-        background-color: #0077be;
-        padding: 20px 0;
-        font-family: Arial, sans-serif;
-    }
-    #heyen-info-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-    }
-    .heyen-card {
-        width: 48%;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-    #heyen-bio-card {
-        background-color: white;
-        display: flex;
-        align-items: center;
-        padding: 20px;
-    }
-    #heyen-bio-image {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin-right: 20px;
-    }
-    #heyen-bio-content {
-        flex: 1;
-    }
-    #heyen-bio-name {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    #heyen-bio-text {
-        font-size: 14px;
-        line-height: 1.4;
-    }
-    #heyen-contact-card {
-        background-color: #4CAF50;
-        color: white;
-        padding: 20px;
-        position: relative;
-    }
-    #heyen-contact-name {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-    #heyen-contact-address,
-    #heyen-contact-phone {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-    #heyen-contact-icon {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        font-size: 24px;
-    }
-    #heyen-bio-arrow {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        font-size: 24px;
-        color: #4CAF50;
-    }
+        #heyen-info-section {
+            background-color: #0077be;
+            padding: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #heyen-info-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .heyen-card {
+            width: 48%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #heyen-bio-card {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #heyen-bio-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        #heyen-bio-content {
+            flex: 1;
+        }
+
+        #heyen-bio-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #heyen-bio-text {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        #heyen-contact-card {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+
+        #heyen-contact-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        #heyen-contact-address,
+        #heyen-contact-phone {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        #heyen-contact-icon {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 24px;
+        }
+
+        #heyen-bio-arrow {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #4CAF50;
+        }
     </style>
 
 <body>
     <header class="top-header">
         <nav>
             <a href="tel:9406928411" title="Call Us">(940) 692-8411</a>
-            <a href="https://maps.google.com/?q=4501+Call+Field+Road+Wichita+Falls,+TX+76308" title="Our Location">4501 Call Field Road, Wichita Falls, TX 76308</a>
+            <a href="https://maps.google.com/?q=4501+Call+Field+Road+Wichita+Falls,+TX+76308" title="Our Location">4501
+                Call Field Road, Wichita Falls, TX 76308</a>
         </nav>
     </header>
 
@@ -313,7 +346,8 @@
                     <div class="main-responsive-menu">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="https://www.wichitafallstxdentist.com/wp-content/uploads/sites/3693/2019/09/logo.png" class="main-logo" alt="logo" style="width: 500px; height: auto;">
+                                <img src="https://www.wichitafallstxdentist.com/wp-content/uploads/sites/3693/2019/09/logo.png"
+                                    class="main-logo" alt="logo" style="width: 500px; height: auto;">
 
                             </a>
                         </div>
@@ -321,16 +355,16 @@
                 </div>
             </div>
 
-            
+
             <div class="container">
-                
+
                 <nav class="navbar navbar-expand-md navbar-light">
                     <div class="collapse navbar-collapse mean-menu justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
-                           
+
                             <li class="nav-item">
                                 <a class="nav-link">
                                     Patient Information
@@ -343,8 +377,7 @@
                                         <a href="whychooseus.html " class="nav-link">Why choose Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="newpatients.html "
-                                            class="nav-link">New Patients</a>
+                                        <a href="newpatients.html " class="nav-link">New Patients</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="scheduling.html " class="nav-link">Scheduling</a>
@@ -353,24 +386,19 @@
                                         <a href="insuranceinformation.html " class="nav-link">Insurance Information</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="patientregistration.html"
-                                            class="nav-link">Patient Registration</a>
+                                        <a href="patientregistration.html" class="nav-link">Patient Registration</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="adapatienteducation.html"
-                                            class="nav-link">ADA Patient Education</a>
+                                        <a href="adapatienteducation.html" class="nav-link">ADA Patient Education</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="infectioncontrol.html"
-                                            class="nav-link">Infection Control</a>
+                                        <a href="infectioncontrol.html" class="nav-link">Infection Control</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="advancedtechnology.html"
-                                            class="nav-link">Advanced Technology</a>
+                                        <a href="advancedtechnology.html" class="nav-link">Advanced Technology</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="nitrousoxide.html"
-                                            class="nav-link">Nitrous Oxide</a>
+                                        <a href="nitrousoxide.html" class="nav-link">Nitrous Oxide</a>
                                     </li>
                                 </ul>
                             </li>
@@ -380,7 +408,8 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="dentalexamsandcheckups.html" class="nav-link">Dental Exams and Check-Ups</a>
+                                        <a href="dentalexamsandcheckups.html" class="nav-link">Dental Exams and
+                                            Check-Ups</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="oralhygiene.html" class="nav-link">Oral Hygiene</a>
@@ -395,14 +424,15 @@
                                         <a href="dentalsealants.html" class="nav-link">Dental Sealants</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="periodontalmaintenance.html" class="nav-link">Periodontal Maintenance</a>
+                                        <a href="periodontalmaintenance.html" class="nav-link">Periodontal
+                                            Maintenance</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="deepteethcleaning.html" class="nav-link">Deep Teeth Cleaning</a>
                                     </li>
                                 </ul>
                             </li>
-                            
+
                             <li class="nav-item">
                                 <a class="nav-link">
                                     Restorative Dentistry
@@ -427,7 +457,8 @@
                                         <a href="immediatedentures.html" class="nav-link">Immediate Dentures</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="implantretaindentures.html" class="nav-link">Implant Retain Dentures</a>
+                                        <a href="implantretaindentures.html" class="nav-link">Implant Retain
+                                            Dentures</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="partialdentures.html" class="nav-link">Partial Dentures</a>
@@ -449,7 +480,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            
+
                             <li class="nav-item">
                                 <a class="nav-link">
                                     Cosmetic Dentistry
@@ -488,63 +519,92 @@
                             <li class="nav-item">
                                 <a href="contactus.html" class="nav-link">Contact Us</a>
                             </li>
-                            
+
                     </div>
                 </nav>
             </div>
-           
+
         </div>
     </div>
 
 
     <!DOCTYPE html>
     <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dental Crowns</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                line-height: 1.6;
-            }
-            h1, h2, h3 {
-                color: #000000;
-            }
-            p {
-                margin: 0.5em 0;
-            }
-            ul {
-                margin: 1em 0;
-            }
-        </style>
+
     </head>
-    <body>
-    
-        <h1>Dental Crowns</h1>
-        <p>Most dentistry looks like dentistry. Our goal is to provide dentistry that is undetectable. We replace existing dental crowns and fillings with restorations that look and feel like your natural teeth.</p>
-        <p>Where damage to a person’s teeth is extreme, and apparently beyond repair, we can use porcelain or porcelain “pasted on gold” crowns to make the smile appear “as new.” This is an extremely reliable technique for repairing the most severe dental problems, even permanently replacing missing teeth to offer a complete smile and a functional bite. We are renowned for the quality of our work and the fantastic changes we make for people using this technology. These treatments are used for a long-lasting correction of major dental problems. It is usual for these treatments to last for 20 to 30 years, which is as close to permanent as dental treatment can get.</p>
-    
-        <h2>How long does it take to fit a dental crown?</h2>
-        <p>Fitting a crown requires at least two visits to our office. Initially, we will remove decay, shape the tooth, and fit it with a temporary crown of either plastic or metal.</p>
-        <p>On the subsequent visit, we will remove the temporary crown and then fit and adjust the final crown. Finally, we will cement the crown into place, and you will have a new beautiful-looking tooth.</p>
-    
-        <h2>Key Benefits of Dental Crowns</h2>
-        <ul>
-            <li>Replaces missing teeth</li>
-            <li>Offers support to misshapen teeth or badly broken teeth</li>
-            <li>Looks completely natural</li>
-            <li>Fixes smile and functional chewing problems</li>
-        </ul>
-    
-        <h2>What are the capabilities of crowns?</h2>
-        <p>Crown and bridgework is a very reliable solution for major dental problems caused through accidents, diseases, or wear and tear. Major problems can usually be corrected using these techniques. Material used in these repairs is either high-grade porcelain or porcelain bonded to gold. A higher strength of the porcelain and gold materials is recommended to treat the most serious dental problems.</p>
-        <p>Where accidental damage has occurred, resulting in lost teeth, or where teeth have broken away through excessive wear, or as the result of old fillings breaking, dental crowns and/or dental bridges can be used as a long-term solution.</p>
-        <p>Many people have unexplained pain from filled back teeth, which is usually due to hairline cracks in the chewing part of the tooth. Placing crowns on these teeth relieves the pain and allows a return of full dental function for these teeth. In front teeth, older fillings can both weaken the teeth and cause appearance problems due to staining or chipping. Porcelain crowns and bridges are suitable in cases where porcelain veneers are not. In teeth with root canal fillings, crowns can prevent breakage.</p>
-    
+
+    <body class="font-sans leading-relaxed bg-gray-50 text-gray-800 ">
+        <div class="max-w-4xl mx-auto p-2">
+            <h1 class="text-4xl font-bold text-gray-900 mb-6 text-center mt-3">Dental Crowns</h1>
+            <p class="mb-4">
+                Most dentistry looks like dentistry. Our goal is to provide dentistry that is undetectable. We replace
+                existing dental crowns and fillings with restorations that look and feel like your natural teeth.
+            </p>
+            <p class="mb-4">
+                Where damage to a person’s teeth is extreme, and apparently beyond repair, we can use porcelain or
+                porcelain
+                “pasted on gold” crowns to make the smile appear “as new.” This is an extremely reliable technique for
+                repairing the most severe dental problems, even permanently replacing missing teeth to offer a complete
+                smile and a functional bite. We are renowned for the quality of our work and the fantastic changes we
+                make
+                for people using this technology. These treatments are used for a long-lasting correction of major
+                dental
+                problems. It is usual for these treatments to last for 20 to 30 years, which is as close to permanent as
+                dental treatment can get.
+            </p>
+
+            <h2 class="text-3xl font-semibold text-gray-900 mb-3">How long does it take to fit a dental crown?</h2>
+            <p class="mb-4">
+                Fitting a crown requires at least two visits to our office. Initially, we will remove decay, shape the
+                tooth,
+                and fit it with a temporary crown of either plastic or metal.
+            </p>
+            <p class="mb-4">
+                On the subsequent visit, we will remove the temporary crown and then fit and adjust the final crown.
+                Finally,
+                we will cement the crown into place, and you will have a new beautiful-looking tooth.
+            </p>
+
+            <h2 class="text-3xl font-semibold text-gray-900 mb-3">Key Benefits of Dental Crowns</h2>
+            <ul class="list-disc list-inside mb-6">
+                <li class="mb-2">Replaces missing teeth</li>
+                <li class="mb-2">Offers support to misshapen teeth or badly broken teeth</li>
+                <li class="mb-2">Looks completely natural</li>
+                <li class="mb-2">Fixes smile and functional chewing problems</li>
+            </ul>
+
+            <h2 class="text-3xl font-semibold text-gray-900 mb-3">What are the capabilities of crowns?</h2>
+            <p class="mb-4">
+                Crown and bridgework is a very reliable solution for major dental problems caused through accidents,
+                diseases, or wear and tear. Major problems can usually be corrected using these techniques. Material
+                used in
+                these repairs is either high-grade porcelain or porcelain bonded to gold. A higher strength of the
+                porcelain
+                and gold materials is recommended to treat the most serious dental problems.
+            </p>
+            <p class="mb-4">
+                Where accidental damage has occurred, resulting in lost teeth, or where teeth have broken away through
+                excessive wear, or as the result of old fillings breaking, dental crowns and/or dental bridges can be
+                used
+                as a long-term solution.
+            </p>
+            <p class="mb-4">
+                Many people have unexplained pain from filled back teeth, which is usually due to hairline cracks in the
+                chewing part of the tooth. Placing crowns on these teeth relieves the pain and allows a return of full
+                dental function for these teeth. In front teeth, older fillings can both weaken the teeth and cause
+                appearance problems due to staining or chipping. Porcelain crowns and bridges are suitable in cases
+                where
+                porcelain veneers are not. In teeth with root canal fillings, crowns can prevent breakage.
+            </p>
+        </div>
     </body>
+
     </html>
-    
 
 
 
@@ -553,7 +613,6 @@
 
 
 
-    
 
 
 
@@ -575,8 +634,8 @@
         </div>
     </footer>
     <nav class="nav">
-      
-     
+
+
         <a href="index.html">HOME</a>
         <a href="patientinformation.html">PATIENT INFORMATION</a>
         <a href="preventativecare.html">PREVENTATIVE CARE</a>
@@ -585,11 +644,11 @@
         <a href="aboutus.html">ABOUT US</a>
         <a href="contactus.html">CONTACT US</a>
         <a href="disclaimer.html">DISCLAIMER</a>
-        
-       
+
+
     </nav>
-    
-   
+
+
 
 
 
@@ -636,5 +695,3 @@
 </body>
 
 </html>
-
-

@@ -42,6 +42,7 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css'>
 
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
     <script type="application/ld+json">
         {
@@ -81,30 +82,30 @@
 
 
 
-
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
         }
+
         header {
             background-color: #0066cc;
             padding: 10px 20px;
             color: white;
         }
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+
         a {
             color: white;
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
-        }
+
 
 
 
@@ -113,6 +114,7 @@
             margin: 0;
             padding: 0;
         }
+
         .top-bar {
             background-color: #0077be;
             color: white;
@@ -120,6 +122,7 @@
             padding: 10px 0;
             font-size: 14px;
         }
+
         .footer {
             background-color: #333;
             color: white;
@@ -128,12 +131,17 @@
             justify-content: space-between;
             align-items: center;
         }
-        .address, .social-icons, .phone {
+
+        .address,
+        .social-icons,
+        .phone {
             flex: 1;
         }
+
         .social-icons {
             text-align: center;
         }
+
         .social-icons a {
             color: white;
             text-decoration: none;
@@ -141,18 +149,21 @@
             border: 1px solid white;
             padding: 5px 10px;
         }
+
         .nav {
             background-color: #333;
             color: white;
             padding: 10px 0;
             text-align: center;
         }
+
         .nav a {
             color: white;
             text-decoration: none;
             margin: 0 10px;
             font-size: 12px;
         }
+
         .copyright {
             background-color: #333;
             color: #777;
@@ -160,6 +171,7 @@
             padding: 10px 0;
             font-size: 12px;
         }
+
         .accessibility {
             position: fixed;
             left: 10px;
@@ -174,139 +186,164 @@
 
 
         .home-slides {
-        position: relative;
-        overflow: hidden;
-    }
-    .main-slides-item {
-        background-image: url('https://example.com/your-background-image.jpg'); /* Replace with your image URL */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 600px; /* Adjust as needed */
-        display: flex;
-        align-items: center;
-    }
-    .main-slides-content {
-        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-        padding: 30px;
-        border-radius: 10px;
-        max-width: 600px; /* Adjust as needed */
-    }
-    .sub-title {
-        display: flex;
-        align-items: center;
-        font-size: 18px;
-        color: #0066cc;
-        margin-bottom: 10px;
-    }
-    .sub-title i {
-        margin-right: 10px;
-    }
-    h1 {
-        font-size: 36px;
-        color: #333;
-        margin-bottom: 20px;
-    }
-    .slides-btn {
-        margin-top: 20px;
-    }
-    .default-btn {
-        display: inline-block;
-        padding: 10px 0;
-        width: 400px;
-        font-size: 24px;
-        border-radius: 10px;
-        text-align: center;
-        background-color: #0066cc;
-        color: white;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-    }
-    .default-btn:hover {
-        background-color: #0055aa;
-    }
+            position: relative;
+            overflow: hidden;
+        }
+
+        .main-slides-item {
+            background-image: url('https://example.com/your-background-image.jpg');
+            /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 600px;
+            /* Adjust as needed */
+            display: flex;
+            align-items: center;
+        }
+
+        .main-slides-content {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Semi-transparent white background */
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            /* Adjust as needed */
+        }
+
+        .sub-title {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+
+        .sub-title i {
+            margin-right: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .slides-btn {
+            margin-top: 20px;
+        }
+
+        .default-btn {
+            display: inline-block;
+            padding: 10px 0;
+            width: 400px;
+            font-size: 24px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #0066cc;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .default-btn:hover {
+            background-color: #0055aa;
+        }
 
 
 
 
-    #heyen-info-section {
-        background-color: #0077be;
-        padding: 20px 0;
-        font-family: Arial, sans-serif;
-    }
-    #heyen-info-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-    }
-    .heyen-card {
-        width: 48%;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-    #heyen-bio-card {
-        background-color: white;
-        display: flex;
-        align-items: center;
-        padding: 20px;
-    }
-    #heyen-bio-image {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin-right: 20px;
-    }
-    #heyen-bio-content {
-        flex: 1;
-    }
-    #heyen-bio-name {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    #heyen-bio-text {
-        font-size: 14px;
-        line-height: 1.4;
-    }
-    #heyen-contact-card {
-        background-color: #4CAF50;
-        color: white;
-        padding: 20px;
-        position: relative;
-    }
-    #heyen-contact-name {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-    #heyen-contact-address,
-    #heyen-contact-phone {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-    #heyen-contact-icon {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        font-size: 24px;
-    }
-    #heyen-bio-arrow {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        font-size: 24px;
-        color: #4CAF50;
-    }
+        #heyen-info-section {
+            background-color: #0077be;
+            padding: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #heyen-info-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .heyen-card {
+            width: 48%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #heyen-bio-card {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #heyen-bio-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        #heyen-bio-content {
+            flex: 1;
+        }
+
+        #heyen-bio-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #heyen-bio-text {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        #heyen-contact-card {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+
+        #heyen-contact-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        #heyen-contact-address,
+        #heyen-contact-phone {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        #heyen-contact-icon {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 24px;
+        }
+
+        #heyen-bio-arrow {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #4CAF50;
+        }
     </style>
 
-    
+
 <body>
     <header class="top-header">
         <nav>
             <a href="tel:9406928411" title="Call Us">(940) 692-8411</a>
-            <a href="https://maps.google.com/?q=4501+Call+Field+Road+Wichita+Falls,+TX+76308" title="Our Location">4501 Call Field Road, Wichita Falls, TX 76308</a>
+            <a href="https://maps.google.com/?q=4501+Call+Field+Road+Wichita+Falls,+TX+76308" title="Our Location">4501
+                Call Field Road, Wichita Falls, TX 76308</a>
         </nav>
     </header>
 
@@ -317,7 +354,8 @@
                     <div class="main-responsive-menu">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="https://www.wichitafallstxdentist.com/wp-content/uploads/sites/3693/2019/09/logo.png" class="main-logo" alt="logo" style="width: 500px; height: auto;">
+                                <img src="https://www.wichitafallstxdentist.com/wp-content/uploads/sites/3693/2019/09/logo.png"
+                                    class="main-logo" alt="logo" style="width: 500px; height: auto;">
 
                             </a>
                         </div>
@@ -325,16 +363,16 @@
                 </div>
             </div>
 
-            
+
             <div class="container">
-                
+
                 <nav class="navbar navbar-expand-md navbar-light">
                     <div class="collapse navbar-collapse mean-menu justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
-                           
+
                             <li class="nav-item">
                                 <a class="nav-link">
                                     Patient Information
@@ -347,8 +385,7 @@
                                         <a href="whychooseus.html " class="nav-link">Why choose Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="newpatients.html "
-                                            class="nav-link">New Patients</a>
+                                        <a href="newpatients.html " class="nav-link">New Patients</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="scheduling.html " class="nav-link">Scheduling</a>
@@ -357,24 +394,19 @@
                                         <a href="insuranceinformation.html " class="nav-link">Insurance Information</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="patientregistration.html"
-                                            class="nav-link">Patient Registration</a>
+                                        <a href="patientregistration.html" class="nav-link">Patient Registration</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="adapatienteducation.html"
-                                            class="nav-link">ADA Patient Education</a>
+                                        <a href="adapatienteducation.html" class="nav-link">ADA Patient Education</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="infectioncontrol.html"
-                                            class="nav-link">Infection Control</a>
+                                        <a href="infectioncontrol.html" class="nav-link">Infection Control</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="advancedtechnology.html"
-                                            class="nav-link">Advanced Technology</a>
+                                        <a href="advancedtechnology.html" class="nav-link">Advanced Technology</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="nitrousoxide.html"
-                                            class="nav-link">Nitrous Oxide</a>
+                                        <a href="nitrousoxide.html" class="nav-link">Nitrous Oxide</a>
                                     </li>
                                 </ul>
                             </li>
@@ -384,7 +416,8 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="dentalexamsandcheckups.html" class="nav-link">Dental Exams and Check-Ups</a>
+                                        <a href="dentalexamsandcheckups.html" class="nav-link">Dental Exams and
+                                            Check-Ups</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="oralhygiene.html" class="nav-link">Oral Hygiene</a>
@@ -399,14 +432,15 @@
                                         <a href="dentalsealants.html" class="nav-link">Dental Sealants</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="periodontalmaintenance.html" class="nav-link">Periodontal Maintenance</a>
+                                        <a href="periodontalmaintenance.html" class="nav-link">Periodontal
+                                            Maintenance</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="teethcleaning.html" class="nav-link">Teeth Cleaning</a>
                                     </li>
                                 </ul>
                             </li>
-                            
+
                             <li class="nav-item">
                                 <a class="nav-link">
                                     Restorative Dentistry
@@ -431,7 +465,8 @@
                                         <a href="immediatedentures.html" class="nav-link">Immediate Dentures</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="implantretaindentures.html" class="nav-link">Implant Retain Dentures</a>
+                                        <a href="implantretaindentures.html" class="nav-link">Implant Retain
+                                            Dentures</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="partialdentures.html" class="nav-link">Partial Dentures</a>
@@ -453,7 +488,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            
+
                             <li class="nav-item">
                                 <a class="nav-link">
                                     Cosmetic Dentistry
@@ -492,228 +527,172 @@
                             <li class="nav-item">
                                 <a href="contactus.html" class="nav-link">Contact Us</a>
                             </li>
-                            
+
                     </div>
                 </nav>
             </div>
-           
+
         </div>
     </div>
-    <div>
 
 
 
+    <!DOCTYPE html>
+    <html lang="en">
 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Patient Education</title>
 
+    </head>
 
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Patient Education</title>
-            <style>
-                body {
-                    font-family: Arial, sans-serif;
-                    margin: 20px;
-                    background-color: #f9f9f9;
-                }
-                h1 {
-                    text-align: center;
-                    font-size: 2em;
-                    margin-bottom: 20px;
-                }
-                .container {
-                    max-width: 800px;
-                    margin: 0 auto;
-                    padding: 20px;
-                    background-color: #fff;
-                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-                    border-radius: 8px;
-                }
-                .center {
-                    text-align: center;
-                }
-                .button {
-                    background-color: #333;
-                    color: white;
-                    padding: 10px 20px;
-                    text-align: center;
-                    text-decoration: none;
-                    display: inline-block;
-                    margin: 10px 5px;
-                    border-radius: 5px;
-                    font-size: 1em;
-                }
-                .button:hover {
-                    background-color: #555;
-                }
-                .dropdown {
-                    width: 250px;
-                    padding: 8px;
-                    font-size: 1em;
-                    border-radius: 5px;
-                    margin: 10px 0;
-                }
-                .return-top {
-                    background-color: #f5f5f5;
-                    border: 1px solid #ccc;
-                    padding: 10px;
-                    display: inline-block;
-                    border-radius: 5px;
-                    margin-top: 20px;
-                }
-                .return-top:hover {
-                    background-color: #ddd;
-                }
-                .library-header {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-bottom: 20px;
-                }
-                .library-header img {
-                    height: 40px;
-                    margin-right: 15px;
-                }
-                .section {
-                    margin: 20px 0;
-                }
-                .section-title {
-                    font-size: 1.5em;
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 10px;
-                }
-                .section-title img {
-                    height: 30px;
-                    margin-right: 10px;
-                }
-            </style>
-        </head>
-        <body>
-        
-            <h1>PATIENT EDUCATION</h1>
-            
-            <div class="container">
-                <div class="library-header">
-                    <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/012012/american_dental_association_1_0.png?itok=_m0OiFsR" alt="ADA Logo">
-                    <div>
+    <body class="bg-gray-100 text-gray-800 font-sans">
+        <div class="w-full p-6">
+            <h1 class="text-4xl font-bold text-center mb-8 text-black">PATIENT EDUCATION</h1>
+
+            <div class=" p-6 rounded-lg shadow-md">
+                <!-- Library Header -->
+                <div class="flex items-center space-x-4 mb-6">
+                    <img class="h-16"
+                        src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/012012/american_dental_association_1_0.png?itok=_m0OiFsR"
+                        alt="ADA Logo">
+                    <div class="text-lg font-semibold">
                         <strong>American Dental Association</strong><br>
                         <strong>PATIENT EDUCATION LIBRARY</strong>
                     </div>
                 </div>
-        
-                <p>The <strong>ADA Patient Education Library</strong> provides the most popular topics in dentistry that will help you better maintain your dental health. Select an article or video below to get started now.</p>
-                
-                <div class="section">
-                    <div class="section-title">
-                        <img src="https://via.placeholder.com/30?text=A" alt="Article Icon"> Articles
+
+                <!-- Description -->
+                <p class="text-gray-700 mb-6">
+                    The <strong>ADA Patient Education Library</strong> provides the most popular topics in dentistry
+                    that will help you better maintain your dental health. Select an article or video below to get
+                    started now.
+                </p>
+
+                <!-- Articles Section -->
+                <div class="mb-6">
+                    <div class="flex items-center space-x-2 mb-2">
+                        <img class="h-6 w-6" src="https://via.placeholder.com/30?text=A" alt="Article Icon">
+                        <span class="text-xl font-semibold">Articles</span>
                     </div>
-                    <select class="dropdown">
+                    <select
+                        class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300">
                         <option>Select an Article...</option>
                     </select>
                 </div>
-        
-                <div class="section">
-                    <div class="section-title">
-                        <img src="https://via.placeholder.com/30?text=V" alt="Video Icon"> Videos
+
+                <!-- Videos Section -->
+                <div class="mb-6">
+                    <div class="flex items-center space-x-2 mb-2">
+                        <img class="h-6 w-6" src="https://via.placeholder.com/30?text=V" alt="Video Icon">
+                        <span class="text-xl font-semibold">Videos</span>
                     </div>
-                    <select class="dropdown">
+                    <select
+                        class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300">
                         <option>Select a Video...</option>
                     </select>
                 </div>
-        
-                <div class="center">
-                    <a href="#" class="return-top">Return To Top ↑</a>
+
+                <!-- Return to Top -->
+                <div class="text-center mb-6">
+                    <a href="#" class="text-blue-600 hover:underline">Return To Top ↑</a>
                 </div>
             </div>
-        
-            <div class="center">
-                <a href="#" class="button">SCHEDULING</a>
-                <a href="#" class="button">DR. DON HEYEN</a>
-                <a href="#" class="button">CONTACT US</a>
+
+            <!-- Bottom Buttons -->
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-4 mb-4">
+                <a href="#"
+                    class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-500 w-full sm:w-auto text-center">SCHEDULING</a>
+                <a href="#"
+                    class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-500 w-full sm:w-auto text-center">DR.
+                    DON HEYEN</a>
+                <a href="#"
+                    class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-500 w-full sm:w-auto text-center">CONTACT
+                    US</a>
             </div>
-        
-        </body>
-        </html>
-        
+        </div>
+    </body>
 
 
-        
+    </html>
 
-<div class="top-bar">
-    Burkburnett TX • Henrietta TX • Archer City TX • Holliday TX • Iowa Park TX<br>
-    Vernon TX • Wichita Falls TX • Seymour TX • Electra TX
-</div>
-<footer class="footer">
-    <div class="address">
-        4501 Call Field Road<br>
-        Wichita Falls, TX 76308
+
+
+
+
+    <div class="top-bar">
+        Burkburnett TX • Henrietta TX • Archer City TX • Holliday TX • Iowa Park TX<br>
+        Vernon TX • Wichita Falls TX • Seymour TX • Electra TX
     </div>
-    <div class="social-icons">
-        <a href="#" aria-label="Facebook">f</a>
-        <a href="#" aria-label="Google">G</a>
+    <footer class="footer">
+        <div class="address">
+            4501 Call Field Road<br>
+            Wichita Falls, TX 76308
+        </div>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Google">G</a>
+        </div>
+        <div class="phone">
+            Tel: (940) 692-8411
+        </div>
+    </footer>
+    <nav class="nav">
+
+
+        <a href="index.html">HOME</a>
+        <a href="patientinformation.html">PATIENT INFORMATION</a>
+        <a href="preventativecare.html">PREVENTATIVE CARE</a>
+        <a href="restorativedentistry.html">RESTORATIVE DENTISTRY</a>
+        <a href="cosmeticdentistry.html">COSMETIC DENTISTRY</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="contactus.html">CONTACT US</a>
+        <a href="disclaimer.html">DISCLAIMER</a>
+
+
+    </nav>
+
+    <div class="accessibility" aria-label="Accessibility options">
+        ♿
     </div>
-    <div class="phone">
-        Tel: (940) 692-8411
-    </div>
-</footer>
-<nav class="nav">
-  
- 
-    <a href="index.html">HOME</a>
-    <a href="patientinformation.html">PATIENT INFORMATION</a>
-    <a href="preventativecare.html">PREVENTATIVE CARE</a>
-    <a href="restorativedentistry.html">RESTORATIVE DENTISTRY</a>
-    <a href="cosmeticdentistry.html">COSMETIC DENTISTRY</a>
-    <a href="aboutus.html">ABOUT US</a>
-    <a href="contactus.html">CONTACT US</a>
-    <a href="disclaimer.html">DISCLAIMER</a>
-    
-   
-</nav>
-
-<div class="accessibility" aria-label="Accessibility options">
-    ♿
-</div>
 
 
-<!-- footer start -->
+    <!-- footer start -->
 
-<p class="tag-line">
-    &nbsp;&nbsp; Created with <i class="fi fi-sr-heart"></i> by <a href="https://www.patientxpress.us/"
-        target="_blank">
-        <img src="assets/image/logoleft.png" alt="patientxpress"></a>
-</p>
+    <p class="tag-line">
+        &nbsp;&nbsp; Created with <i class="fi fi-sr-heart"></i> by <a href="https://www.patientxpress.us/"
+            target="_blank">
+            <img src="assets/image/logoleft.png" alt="patientxpress"></a>
+    </p>
 
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
-</script>
-<script src="assets/js/jquery.min.js"></script>
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
 
-<script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
-<script src="assets/js/jquery.meanmenu.js"></script>
+    <script src="assets/js/jquery.meanmenu.js"></script>
 
-<script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
 
-<script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
 
-<script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
 
-<script src="assets/js/nice-select.min.js"></script>
+    <script src="assets/js/nice-select.min.js"></script>
 
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
 
-<script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
 
-<script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
 
-<script src="assets/js/contact-form-script.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
 
-<script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
 
-<script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

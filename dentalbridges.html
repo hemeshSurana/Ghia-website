@@ -43,6 +43,8 @@
 
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
 
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -85,22 +87,22 @@
             padding: 0;
             font-family: Arial, sans-serif;
         }
+
         header {
             background-color: #0066cc;
             padding: 10px 20px;
             color: white;
         }
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+
         a {
             color: white;
             text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
         }
 
 
@@ -110,6 +112,7 @@
             margin: 0;
             padding: 0;
         }
+
         .top-bar {
             background-color: #0077be;
             color: white;
@@ -117,6 +120,7 @@
             padding: 10px 0;
             font-size: 14px;
         }
+
         .footer {
             background-color: #333;
             color: white;
@@ -125,12 +129,17 @@
             justify-content: space-between;
             align-items: center;
         }
-        .address, .social-icons, .phone {
+
+        .address,
+        .social-icons,
+        .phone {
             flex: 1;
         }
+
         .social-icons {
             text-align: center;
         }
+
         .social-icons a {
             color: white;
             text-decoration: none;
@@ -138,18 +147,21 @@
             border: 1px solid white;
             padding: 5px 10px;
         }
+
         .nav {
             background-color: #333;
             color: white;
             padding: 10px 0;
             text-align: center;
         }
+
         .nav a {
             color: white;
             text-decoration: none;
             margin: 0 10px;
             font-size: 12px;
         }
+
         .copyright {
             background-color: #333;
             color: #777;
@@ -157,6 +169,7 @@
             padding: 10px 0;
             font-size: 12px;
         }
+
         .accessibility {
             position: fixed;
             left: 10px;
@@ -171,138 +184,163 @@
 
 
         .home-slides {
-        position: relative;
-        overflow: hidden;
-    }
-    .main-slides-item {
-        background-image: url('https://example.com/your-background-image.jpg'); /* Replace with your image URL */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 600px; /* Adjust as needed */
-        display: flex;
-        align-items: center;
-    }
-    .main-slides-content {
-        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-        padding: 30px;
-        border-radius: 10px;
-        max-width: 600px; /* Adjust as needed */
-    }
-    .sub-title {
-        display: flex;
-        align-items: center;
-        font-size: 18px;
-        color: #0066cc;
-        margin-bottom: 10px;
-    }
-    .sub-title i {
-        margin-right: 10px;
-    }
-    h1 {
-        font-size: 36px;
-        color: #333;
-        margin-bottom: 20px;
-    }
-    .slides-btn {
-        margin-top: 20px;
-    }
-    .default-btn {
-        display: inline-block;
-        padding: 10px 0;
-        width: 400px;
-        font-size: 24px;
-        border-radius: 10px;
-        text-align: center;
-        background-color: #0066cc;
-        color: white;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-    }
-    .default-btn:hover {
-        background-color: #0055aa;
-    }
+            position: relative;
+            overflow: hidden;
+        }
+
+        .main-slides-item {
+            background-image: url('https://example.com/your-background-image.jpg');
+            /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 600px;
+            /* Adjust as needed */
+            display: flex;
+            align-items: center;
+        }
+
+        .main-slides-content {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Semi-transparent white background */
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            /* Adjust as needed */
+        }
+
+        .sub-title {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+
+        .sub-title i {
+            margin-right: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .slides-btn {
+            margin-top: 20px;
+        }
+
+        .default-btn {
+            display: inline-block;
+            padding: 10px 0;
+            width: 400px;
+            font-size: 24px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #0066cc;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .default-btn:hover {
+            background-color: #0055aa;
+        }
 
 
 
 
-    #heyen-info-section {
-        background-color: #0077be;
-        padding: 20px 0;
-        font-family: Arial, sans-serif;
-    }
-    #heyen-info-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-    }
-    .heyen-card {
-        width: 48%;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-    #heyen-bio-card {
-        background-color: white;
-        display: flex;
-        align-items: center;
-        padding: 20px;
-    }
-    #heyen-bio-image {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin-right: 20px;
-    }
-    #heyen-bio-content {
-        flex: 1;
-    }
-    #heyen-bio-name {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    #heyen-bio-text {
-        font-size: 14px;
-        line-height: 1.4;
-    }
-    #heyen-contact-card {
-        background-color: #4CAF50;
-        color: white;
-        padding: 20px;
-        position: relative;
-    }
-    #heyen-contact-name {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-    #heyen-contact-address,
-    #heyen-contact-phone {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-    #heyen-contact-icon {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        font-size: 24px;
-    }
-    #heyen-bio-arrow {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        font-size: 24px;
-        color: #4CAF50;
-    }
+        #heyen-info-section {
+            background-color: #0077be;
+            padding: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #heyen-info-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .heyen-card {
+            width: 48%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #heyen-bio-card {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #heyen-bio-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        #heyen-bio-content {
+            flex: 1;
+        }
+
+        #heyen-bio-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #heyen-bio-text {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        #heyen-contact-card {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+
+        #heyen-contact-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        #heyen-contact-address,
+        #heyen-contact-phone {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        #heyen-contact-icon {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 24px;
+        }
+
+        #heyen-bio-arrow {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #4CAF50;
+        }
     </style>
 
 <body>
     <header class="top-header">
         <nav>
             <a href="tel:9406928411" title="Call Us">(940) 692-8411</a>
-            <a href="https://maps.google.com/?q=4501+Call+Field+Road+Wichita+Falls,+TX+76308" title="Our Location">4501 Call Field Road, Wichita Falls, TX 76308</a>
+            <a href="https://maps.google.com/?q=4501+Call+Field+Road+Wichita+Falls,+TX+76308" title="Our Location">4501
+                Call Field Road, Wichita Falls, TX 76308</a>
         </nav>
     </header>
 
@@ -313,7 +351,8 @@
                     <div class="main-responsive-menu">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="https://www.wichitafallstxdentist.com/wp-content/uploads/sites/3693/2019/09/logo.png" class="main-logo" alt="logo" style="width: 500px; height: auto;">
+                                <img src="https://www.wichitafallstxdentist.com/wp-content/uploads/sites/3693/2019/09/logo.png"
+                                    class="main-logo" alt="logo" style="width: 500px; height: auto;">
 
                             </a>
                         </div>
@@ -321,16 +360,16 @@
                 </div>
             </div>
 
-            
+
             <div class="container">
-                
+
                 <nav class="navbar navbar-expand-md navbar-light">
                     <div class="collapse navbar-collapse mean-menu justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
-                           
+
                             <li class="nav-item">
                                 <a class="nav-link">
                                     Patient Information
@@ -343,8 +382,7 @@
                                         <a href="whychooseus.html " class="nav-link">Why choose Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="newpatients.html "
-                                            class="nav-link">New Patients</a>
+                                        <a href="newpatients.html " class="nav-link">New Patients</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="scheduling.html " class="nav-link">Scheduling</a>
@@ -353,24 +391,19 @@
                                         <a href="insuranceinformation.html " class="nav-link">Insurance Information</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="patientregistration.html"
-                                            class="nav-link">Patient Registration</a>
+                                        <a href="patientregistration.html" class="nav-link">Patient Registration</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="adapatienteducation.html"
-                                            class="nav-link">ADA Patient Education</a>
+                                        <a href="adapatienteducation.html" class="nav-link">ADA Patient Education</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="infectioncontrol.html"
-                                            class="nav-link">Infection Control</a>
+                                        <a href="infectioncontrol.html" class="nav-link">Infection Control</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="advancedtechnology.html"
-                                            class="nav-link">Advanced Technology</a>
+                                        <a href="advancedtechnology.html" class="nav-link">Advanced Technology</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="nitrousoxide.html"
-                                            class="nav-link">Nitrous Oxide</a>
+                                        <a href="nitrousoxide.html" class="nav-link">Nitrous Oxide</a>
                                     </li>
                                 </ul>
                             </li>
@@ -380,7 +413,8 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="dentalexamsandcheckups.html" class="nav-link">Dental Exams and Check-Ups</a>
+                                        <a href="dentalexamsandcheckups.html" class="nav-link">Dental Exams and
+                                            Check-Ups</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="oralhygiene.html" class="nav-link">Oral Hygiene</a>
@@ -395,14 +429,15 @@
                                         <a href="dentalsealants.html" class="nav-link">Dental Sealants</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="periodontalmaintenance.html" class="nav-link">Periodontal Maintenance</a>
+                                        <a href="periodontalmaintenance.html" class="nav-link">Periodontal
+                                            Maintenance</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="teethcleaning.html" class="nav-link">Teeth Cleaning</a>
                                     </li>
                                 </ul>
                             </li>
-                            
+
                             <li class="nav-item">
                                 <a class="nav-link">
                                     Restorative Dentistry
@@ -427,7 +462,8 @@
                                         <a href="immediatedentures.html" class="nav-link">Immediate Dentures</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="implantretaindentures.html" class="nav-link">Implant Retain Dentures</a>
+                                        <a href="implantretaindentures.html" class="nav-link">Implant Retain
+                                            Dentures</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="partialdentures.html" class="nav-link">Partial Dentures</a>
@@ -449,7 +485,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            
+
                             <li class="nav-item">
                                 <a class="nav-link">
                                     Cosmetic Dentistry
@@ -488,76 +524,125 @@
                             <li class="nav-item">
                                 <a href="contactus.html" class="nav-link">Contact Us</a>
                             </li>
-                            
+
                     </div>
                 </nav>
             </div>
-           
+
         </div>
     </div>
 
 
 
-
     <!DOCTYPE html>
     <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dental Bridges</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                line-height: 1.6;
-            }
-            h1, h2, h3 {
-                color: #000000;
-            }
-            p {
-                margin: 0.5em 0;
-            }
-        </style>
     </head>
-    <body>
-    
-        <h1>Dental Bridges</h1>
-        <p>All of your teeth play an important role in speaking, chewing, and in maintaining proper alignment of other teeth. Tooth loss doesn’t necessarily have to occur as you age, but if you do lose teeth they must be replaced to maintain proper function of your mouth. Fortunately, there are options for correcting tooth loss.</p>
-    
-        <h2>Dental Bridge Options</h2>
-        <p>A dental bridge — a device used to replace missing teeth — attaches artificial teeth to adjacent natural teeth, called abutment teeth. Bridges are either permanently attached (fixed bridges) or they can be removable.</p>
-        <p>Fixed bridges are applied by either placing crowns on the abutment teeth or by bonding the artificial teeth directly to the abutment teeth. Removable bridges are attached to the teeth with metal clasps or by precision attachments.</p>
-        <p>If you’re missing one or more teeth, you may be aware of their importance to your appearance and dental health. Your teeth work together for many daily functions from eating to speaking. With missing teeth, it’s difficult to do these things. Missing teeth can and should be replaced. Fixed bridges are a great way to restore your dental health and appearance.</p>
-    
-        <h2>What exactly is a dental bridge or fixed partial denture?</h2>
-        <p>A bridge (fixed partial denture) is a device which fills the gap where teeth are absent. Fixed bridges are bonded into place and can only be removed by a dental professional. Removable bridges, as the name implies, can be taken out and cleaned. Fixed bridges offer more stability than their removable counterparts.</p>
-    
-        <h2>Why do I need a dental bridge?</h2>
-        <p>Oral functionality and appearance are important reasons for wearing a bridge. A bridge helps support your lips and cheeks. The loss of a back tooth may cause your mouth to sink and your face to look older.</p>
-        <p>Dental health is the most important reason for a bridge. Teeth were designed to complement each other. Unusual stresses are placed on the gums and other oral tissues when teeth are missing, causing a number of potentially harmful disorders.</p>
-        <p>Increased risk of gum disease has proven to be one of the worst side effects of missing teeth and can be minimized with a bridge.</p>
-        <p>Missing teeth can cause speech disorders as they are used to make many of the sounds we use to speak clearly.</p>
-    
-        <h2>How is a dental bridge attached?</h2>
-        <p>The attachment procedure usually takes two or three appointments to complete. At the first appointment, Dr. Heyen will prepare the teeth on either side of the gap by removing a portion of the enamel and dentin.</p>
-        <p>Since the bridge must be fabricated very precisely to ensure correct bite and to match the opposing tooth, impressions of the teeth are taken and sent to a lab where the bridge will be constructed.</p>
-        <p>Fixed bridges are typically cemented to the natural teeth next to the space left by the missing tooth. A pontic (false tooth) replaces the lost tooth. Dental crowns, which are cemented onto the natural teeth, provide support for the bridge.</p>
-    
-        <h2>What materials are used for dental bridges?</h2>
-        <p>Bridges can be constructed from gold alloys, non-precious alloys, porcelain, or a combination of these materials. Porcelain is often bonded to either precious or non-precious metal.</p>
-    
-        <h2>How do I take care of my bridge?</h2>
-        <p>A strict regimen of brushing and flossing will keep the bridge and surrounding teeth clean. This is of critical importance as the bridge relies on the neighboring teeth for support.</p>
-    
+
+    <body class="font-sans leading-relaxed bg-gray-50 text-gray-800 ">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl font-bold text-gray-900 mb-6 text-center mt-3">Dental Bridges</h1>
+            <p class="mb-4">
+                All of your teeth play an important role in speaking, chewing, and in maintaining proper alignment of
+                other
+                teeth. Tooth loss doesn’t necessarily have to occur as you age, but if you do lose teeth they must be
+                replaced to maintain proper function of your mouth. Fortunately, there are options for correcting tooth
+                loss.
+            </p>
+
+            <h2 class="text-3xl font-semibold text-gray-900 mb-3">Dental Bridge Options</h2>
+            <p class="mb-4">
+                A dental bridge — a device used to replace missing teeth — attaches artificial teeth to adjacent natural
+                teeth, called abutment teeth. Bridges are either permanently attached (fixed bridges) or they can be
+                removable.
+            </p>
+            <p class="mb-4">
+                Fixed bridges are applied by either placing crowns on the abutment teeth or by bonding the artificial
+                teeth
+                directly to the abutment teeth. Removable bridges are attached to the teeth with metal clasps or by
+                precision attachments.
+            </p>
+            <p class="mb-4">
+                If you’re missing one or more teeth, you may be aware of their importance to your appearance and dental
+                health. Your teeth work together for many daily functions from eating to speaking. With missing teeth,
+                it’s
+                difficult to do these things. Missing teeth can and should be replaced. Fixed bridges are a great way to
+                restore your dental health and appearance.
+            </p>
+
+            <h2 class="text-3xl font-semibold text-gray-900 mb-3">What exactly is a dental bridge or fixed partial
+                denture?</h2>
+            <p class="mb-4">
+                A bridge (fixed partial denture) is a device which fills the gap where teeth are absent. Fixed bridges
+                are
+                bonded into place and can only be removed by a dental professional. Removable bridges, as the name
+                implies,
+                can be taken out and cleaned. Fixed bridges offer more stability than their removable counterparts.
+            </p>
+
+            <h2 class="text-3xl font-semibold text-gray-900 mb-3">Why do I need a dental bridge?</h2>
+            <p class="mb-4">
+                Oral functionality and appearance are important reasons for wearing a bridge. A bridge helps support
+                your
+                lips and cheeks. The loss of a back tooth may cause your mouth to sink and your face to look older.
+            </p>
+            <p class="mb-4">
+                Dental health is the most important reason for a bridge. Teeth were designed to complement each other.
+                Unusual stresses are placed on the gums and other oral tissues when teeth are missing, causing a number
+                of
+                potentially harmful disorders.
+            </p>
+            <p class="mb-4">
+                Increased risk of gum disease has proven to be one of the worst side effects of missing teeth and can be
+                minimized with a bridge.
+            </p>
+            <p class="mb-8">
+                Missing teeth can cause speech disorders as they are used to make many of the sounds we use to speak
+                clearly.
+            </p>
+
+            <h2 class="text-3xl font-semibold text-gray-900 mb-3">How is a dental bridge attached?</h2>
+            <p class="mb-4">
+                The attachment procedure usually takes two or three appointments to complete. At the first appointment,
+                Dr.
+                Heyen will prepare the teeth on either side of the gap by removing a portion of the enamel and dentin.
+            </p>
+            <p class="mb-4">
+                Since the bridge must be fabricated very precisely to ensure correct bite and to match the opposing
+                tooth,
+                impressions of the teeth are taken and sent to a lab where the bridge will be constructed.
+            </p>
+            <p class="mb-8">
+                Fixed bridges are typically cemented to the natural teeth next to the space left by the missing tooth. A
+                pontic (false tooth) replaces the lost tooth. Dental crowns, which are cemented onto the natural teeth,
+                provide support for the bridge.
+            </p>
+
+            <h2 class="text-3xl font-semibold text-gray-900 mb-3">What materials are used for dental bridges?</h2>
+            <p class="mb-4">
+                Bridges can be constructed from gold alloys, non-precious alloys, porcelain, or a combination of these
+                materials. Porcelain is often bonded to either precious or non-precious metal.
+            </p>
+
+            <h2 class="text-3xl font-semibold text-gray-900 mb-3">How do I take care of my bridge?</h2>
+            <p class="mb-8">
+                A strict regimen of brushing and flossing will keep the bridge and surrounding teeth clean. This is of
+                critical importance as the bridge relies on the neighboring teeth for support.
+            </p>
+        </div>
     </body>
+
     </html>
-    
 
 
 
 
 
 
-    
 
 
 
@@ -579,8 +664,8 @@
         </div>
     </footer>
     <nav class="nav">
-      
-     
+
+
         <a href="index.html">HOME</a>
         <a href="patientinformation.html">PATIENT INFORMATION</a>
         <a href="preventativecare.html">PREVENTATIVE CARE</a>
@@ -589,11 +674,11 @@
         <a href="aboutus.html">ABOUT US</a>
         <a href="contactus.html">CONTACT US</a>
         <a href="disclaimer.html">DISCLAIMER</a>
-        
-       
+
+
     </nav>
-    
-   
+
+
 
 
 
@@ -640,4 +725,3 @@
 </body>
 
 </html>
-
