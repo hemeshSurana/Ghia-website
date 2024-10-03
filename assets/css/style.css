@@ -512,7 +512,7 @@ h6:last-child {
   padding: 10px 0;
   background-color: rgb(213, 211, 211);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -545,9 +545,9 @@ h5.logo-text {
 }
 
 .main-navbar .navbar .navbar-nav {
-  /* margin-right: auto; */
-  /* width: 80%; */
-  /* justify-content: flex-start; */
+  margin-right: auto;
+  width: 100%;
+  justify-content: flex-start;
 }
 
 .main-navbar .navbar .navbar-nav .nav-item {
@@ -615,6 +615,7 @@ h5.logo-text {
 .main-navbar .navbar .navbar-nav .nav-item:hover a,
 .main-navbar .navbar .navbar-nav .nav-item.active a {
   color: #06a3da;
+  justify-content: space-between;
 }
 
 .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu {

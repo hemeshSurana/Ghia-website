@@ -579,6 +579,10 @@
                     <select
                         class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300">
                         <option>Select an Article...</option>
+                        <option value="article1">The Importance of Oral Hygiene</option>
+                        <option value="article2">How to Prevent Cavities</option>
+                        <option value="article3">Benefits of Regular Dental Checkups</option>
+                        <option value="article4">Understanding Gum Disease</option>
                     </select>
                 </div>
 
@@ -591,6 +595,10 @@
                     <select
                         class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300">
                         <option>Select a Video...</option>
+                        <option value="video1">How to Brush Properly</option>
+                        <option value="video2">Understanding Dental Implants</option>
+                        <option value="video3">The Best Foods for Healthy Teeth</option>
+                        <option value="video4">What Happens During a Root Canal?</option>
                     </select>
                 </div>
 
@@ -601,15 +609,20 @@
             </div>
 
             <!-- Bottom Buttons -->
-            <div class="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-4 mb-4">
-                <a href="#"
-                    class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-500 w-full sm:w-auto text-center">SCHEDULING</a>
-                <a href="#"
-                    class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-500 w-full sm:w-auto text-center">DR.
-                    DON HEYEN</a>
-                <a href="#"
-                    class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-500 w-full sm:w-auto text-center">CONTACT
-                    US</a>
+            <div
+                class="button-group flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4 mt-6 mb-3 p-4">
+                <a href="scheduling.html"
+                    class="w-full sm:w-auto text-center px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300">
+                    Scheduling
+                </a>
+                <a href="drdonheyen.html"
+                    class="w-full sm:w-auto text-center px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300">
+                    Dr. Don Heyen
+                </a>
+                <a href="contactus.html"
+                    class="w-full sm:w-auto text-center px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300">
+                    Contact Us
+                </a>
             </div>
         </div>
     </body>
@@ -619,42 +632,49 @@
 
 
 
-
-
-    <div class="top-bar">
+    <div class="top-bar bg-gray-200 text-center py-2 text-sm">
         Burkburnett TX • Henrietta TX • Archer City TX • Holliday TX • Iowa Park TX<br>
         Vernon TX • Wichita Falls TX • Seymour TX • Electra TX
     </div>
-    <footer class="footer">
-        <div class="address">
-            4501 Call Field Road<br>
-            Wichita Falls, TX 76308
-        </div>
-        <div class="social-icons">
-            <a href="#" aria-label="Facebook">f</a>
-            <a href="#" aria-label="Google">G</a>
-        </div>
-        <div class="phone">
-            Tel: (940) 692-8411
+
+    <footer class="footer bg-gray-900 text-white py-8">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div class="address text-center md:text-left">
+                4501 Call Field Road<br>
+                Wichita Falls, TX 76308
+            </div>
+
+            <div class="social-icons flex justify-center space-x-4">
+                <a href="#" aria-label="Facebook" class="text-lg flex items-center justify-center w-10 h-10 ">
+                    f
+                </a>
+                <a href="#" aria-label="Google" class="text-lg flex items-center justify-center w-10 h-10 ">
+                    G
+                </a>
+            </div>
+
+
+            <div class="phone text-center md:text-right">
+                Tel: (940) 692-8411
+            </div>
         </div>
     </footer>
-    <nav class="nav">
 
-
-        <a href="index.html">HOME</a>
-        <a href="patientinformation.html">PATIENT INFORMATION</a>
-        <a href="preventativecare.html">PREVENTATIVE CARE</a>
-        <a href="restorativedentistry.html">RESTORATIVE DENTISTRY</a>
-        <a href="cosmeticdentistry.html">COSMETIC DENTISTRY</a>
-        <a href="aboutus.html">ABOUT US</a>
-        <a href="contactus.html">CONTACT US</a>
-        <a href="disclaimer.html">DISCLAIMER</a>
-
-
+    <nav class="nav bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex flex-wrap justify-center space-x-6">
+            <a href="index.html" class="hover:text-gray-400">HOME</a>
+            <a href="patientinformation.html" class="hover:text-gray-400">PATIENT INFORMATION</a>
+            <a href="preventativecare.html" class="hover:text-gray-400">PREVENTATIVE CARE</a>
+            <a href="restorativedentistry.html" class="hover:text-gray-400">RESTORATIVE DENTISTRY</a>
+            <a href="cosmeticdentistry.html" class="hover:text-gray-400">COSMETIC DENTISTRY</a>
+            <a href="aboutus.html" class="hover:text-gray-400">ABOUT US</a>
+            <a href="contactus.html" class="hover:text-gray-400">CONTACT US</a>
+            <a href="disclaimer.html" class="hover:text-gray-400">DISCLAIMER</a>
+        </div>
     </nav>
 
-    <div class="accessibility" aria-label="Accessibility options">
-        ♿
+    <div class="accessibility" aria-label="Accessibility options" style="cursor: pointer;">
+        <a href="newpatients.html">♿</a>
     </div>
 
 
