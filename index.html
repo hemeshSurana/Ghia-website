@@ -545,6 +545,24 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dentist Services</title>
+
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
+            video {
+                will-change: transform;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: -1;
+                /* Ensure video stays behind the content */
+            }
+        </style>
     </head>
 
     <body class="bg-gray-100 text-black">
@@ -553,7 +571,7 @@
         <!-- Hero Section -->
         <div class="relative h-screen w-full">
             <!-- Video Background -->
-            <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+            <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover" loading="lazy">
                 <source src="assets/image/1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -603,21 +621,13 @@
                 </div>
 
                 <!-- Feature Cards -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
                     <div class="single-core-features text-center p-6 bg-white rounded-lg shadow-md">
                         <div class="icon mb-4">
                             <i class="flaticon-caduceus text-blue-600 text-4xl"></i>
                         </div>
                         <h3 class="text-xl font-semibold">
                             <a href="scheduling.html" class="text-gray-800 hover:text-blue-500">Scheduling</a>
-                        </h3>
-                    </div>
-                    <div class="single-core-features text-center p-6 bg-white rounded-lg shadow-md">
-                        <div class="icon mb-4">
-                            <i class="flaticon-policy text-blue-600 text-4xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold">
-                            <a href="patientreview.html" class="text-gray-800 hover:text-blue-500">Patient Review</a>
                         </h3>
                     </div>
                     <div class="single-core-features text-center p-6 bg-white rounded-lg shadow-md">
