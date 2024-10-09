@@ -334,6 +334,13 @@
             font-size: 24px;
             color: #4CAF50;
         }
+
+        .article-text {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            display: none;
+        }
     </style>
 
 
@@ -528,7 +535,6 @@
                             <li class="nav-item">
                                 <a href="contactus.html" class="nav-link">Contact Us</a>
                             </li>
-
                     </div>
                 </nav>
             </div>
@@ -545,7 +551,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Patient Education</title>
-
+        <style>
+            .article-text {
+                margin-top: 10px;
+                padding: 10px;
+                border: 1px solid #ddd;
+                display: none;
+                background-color: white;
+                text-align: center;
+                justify-content: center;
+            }
+        </style>
     </head>
 
     <body class="bg-gray-100 text-gray-800 font-sans">
@@ -577,18 +593,21 @@
                         <img class="h-6 w-6" src="https://via.placeholder.com/30?text=A" alt="Article Icon">
                         <span class="text-xl font-semibold">Articles</span>
                     </div>
-                    <select
-                        class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300">
+                    <select id="articleSelect"
+                        class="w-72 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+                        onchange="displayArticle()">
                         <option>Select an Article...</option>
                         <option value="article1">The Importance of Oral Hygiene</option>
                         <option value="article2">How to Prevent Cavities</option>
                         <option value="article3">Benefits of Regular Dental Checkups</option>
                         <option value="article4">Understanding Gum Disease</option>
                     </select>
+
+                    <div id="articleText" class="article-text"></div>
                 </div>
 
                 <!-- Videos Section -->
-                <div class="mb-6">
+                <!-- <div class="mb-6">
                     <div class="flex items-center space-x-2 mb-2">
                         <img class="h-6 w-6" src="https://via.placeholder.com/30?text=V" alt="Video Icon">
                         <span class="text-xl font-semibold">Videos</span>
@@ -601,10 +620,7 @@
                         <option value="video3">The Best Foods for Healthy Teeth</option>
                         <option value="video4">What Happens During a Root Canal?</option>
                     </select>
-                </div>
-
-                <!-- Return to Top -->
-
+                </div> -->
             </div>
 
             <!-- Bottom Buttons -->
@@ -677,6 +693,72 @@
             <img src="assets/image/logoleft.png" alt="patientxpress"></a>
     </p>
 
+    <script>
+        function displayArticle() {
+            const articleTextDiv = document.getElementById('articleText');
+            const articleSelect = document.getElementById('articleSelect');
+            const selectedValue = articleSelect.value;
+
+            let articleText = '';
+
+            switch (selectedValue) {
+                case 'article1':
+                    articleText = `
+                        Oral hygiene is essential for preventing oral diseases such as cavities and gum disease.
+                        Maintaining a clean mouth helps reduce bacteria that can lead to infections and other oral health issues.
+                        Daily brushing and flossing remove plaque, which is the primary cause of tooth decay and gum problems.
+                        Additionally, using mouthwash can help kill bacteria and freshen breath.
+                        Oral hygiene also plays a key role in overall health, as poor oral care can lead to systemic conditions such as heart disease.
+                        Regular dental checkups allow early detection of issues and ensure that your mouth stays healthy.
+                        Proper oral care, including regular cleaning by professionals, can keep your teeth and gums in great condition for life.
+                    `;
+                    break;
+                case 'article2':
+                    articleText = `
+                        Preventing cavities is not just about brushing your teeth daily, though that is crucial.
+                        Regular flossing ensures that food particles and plaque between teeth are removed.
+                        Reducing your intake of sugary foods and drinks helps limit the fuel bacteria use to create cavities.
+                        Fluoride toothpaste can strengthen tooth enamel, making it harder for cavities to form.
+                        In addition, using dental sealants on the molars can provide extra protection.
+                        Visiting your dentist regularly for cleanings and checkups can catch cavities early before they become bigger problems.
+                        Other preventive measures include chewing sugar-free gum to increase saliva production, which naturally helps clean teeth.
+                    `;
+                    break;
+                case 'article3':
+                    articleText = `
+                        Regular dental checkups are vital for maintaining oral health and preventing major dental issues.
+                        Your dentist can spot early signs of tooth decay, gum disease, and even oral cancer during routine visits.
+                        These appointments also include professional cleanings, which remove hardened plaque (tartar) that cannot be brushed away.
+                        Catching problems early, like cavities or infections, prevents them from worsening and becoming more painful and costly to fix.
+                        Regular checkups also help ensure that dental restorations, such as crowns or fillings, remain in good condition.
+                        Your dentist can also provide guidance on improving your at-home care routine to further enhance your oral health.
+                        Regular dental visits play a role in overall well-being, linking oral health to conditions like diabetes and heart disease.
+                    `;
+                    break;
+                case 'article4':
+                    articleText = `
+                        Gum disease, also known as periodontal disease, is a serious condition that can lead to tooth loss if left untreated.
+                        It begins with gingivitis, where gums become inflamed and bleed easily during brushing or flossing.
+                        Without proper treatment, gingivitis can progress to periodontitis, where the gums pull away from the teeth, forming pockets that trap bacteria.
+                        This can lead to bone loss and, eventually, the loss of teeth.
+                        Maintaining proper oral hygiene, including regular brushing, flossing, and professional cleanings, is key to preventing gum disease.
+                        Additionally, avoiding smoking and managing conditions like diabetes can reduce the risk of developing gum disease.
+                        If detected early, gum disease can be reversed with professional care, but advanced cases may require surgery.
+                    `;
+                    break;
+                default:
+                    articleText = '';
+                    break;
+            }
+
+            if (articleText) {
+                articleTextDiv.style.display = 'block';
+                articleTextDiv.innerHTML = articleText.replace(/\n/g, '<br>');
+            } else {
+                articleTextDiv.style.display = 'none';
+            }
+        }
+    </script>
     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
     </script>
     <script src="assets/js/jquery.min.js"></script>
