@@ -591,8 +591,9 @@
                 <div class="mb-6">
                     <div class="flex items-center space-x-2 mb-2">
                         <img class="h-6 w-6" src="https://via.placeholder.com/30?text=A" alt="Article Icon">
-                        <span class="text-xl font-semibold">Articles</span>
+                        <span class="text-xl font-semibold text-gray-800">Articles</span>
                     </div>
+
                     <select id="articleSelect"
                         class="w-72 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300"
                         onchange="displayArticle()">
@@ -603,7 +604,8 @@
                         <option value="article4">Understanding Gum Disease</option>
                     </select>
 
-                    <div id="articleText" class="article-text"></div>
+                    <div id="articleText"
+                        class="article-text mt-4 p-4 bg-white border border-gray-200 rounded-lg shadow-md"></div>
                 </div>
 
                 <!-- Videos Section -->
@@ -692,7 +694,6 @@
             target="_blank">
             <img src="assets/image/logoleft.png" alt="patientxpress"></a>
     </p>
-
     <script>
         function displayArticle() {
             const articleTextDiv = document.getElementById('articleText');
@@ -700,9 +701,12 @@
             const selectedValue = articleSelect.value;
 
             let articleText = '';
+            let articleHeading = '';
+            let articleImage = '';
 
             switch (selectedValue) {
                 case 'article1':
+                    articleHeading = 'The Importance of Oral Hygiene';
                     articleText = `
                         Oral hygiene is essential for preventing oral diseases such as cavities and gum disease.
                         Maintaining a clean mouth helps reduce bacteria that can lead to infections and other oral health issues.
@@ -712,8 +716,10 @@
                         Regular dental checkups allow early detection of issues and ensure that your mouth stays healthy.
                         Proper oral care, including regular cleaning by professionals, can keep your teeth and gums in great condition for life.
                     `;
+                    articleImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7e6r-zQMho65Sg41dSy_ZqFJ4oEUbRqzyDA&s';
                     break;
                 case 'article2':
+                    articleHeading = 'How to Prevent Cavities';
                     articleText = `
                         Preventing cavities is not just about brushing your teeth daily, though that is crucial.
                         Regular flossing ensures that food particles and plaque between teeth are removed.
@@ -721,44 +727,57 @@
                         Fluoride toothpaste can strengthen tooth enamel, making it harder for cavities to form.
                         In addition, using dental sealants on the molars can provide extra protection.
                         Visiting your dentist regularly for cleanings and checkups can catch cavities early before they become bigger problems.
-                        Other preventive measures include chewing sugar-free gum to increase saliva production, which naturally helps clean teeth.
                     `;
+                    articleImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiL83N9Blf8UNCTKSE_z2xzFXKyPTvIc14Fg&s';
                     break;
                 case 'article3':
+                    articleHeading = 'The Importance of Regular Dental Checkups';
                     articleText = `
                         Regular dental checkups are vital for maintaining oral health and preventing major dental issues.
                         Your dentist can spot early signs of tooth decay, gum disease, and even oral cancer during routine visits.
                         These appointments also include professional cleanings, which remove hardened plaque (tartar) that cannot be brushed away.
                         Catching problems early, like cavities or infections, prevents them from worsening and becoming more painful and costly to fix.
                         Regular checkups also help ensure that dental restorations, such as crowns or fillings, remain in good condition.
-                        Your dentist can also provide guidance on improving your at-home care routine to further enhance your oral health.
-                        Regular dental visits play a role in overall well-being, linking oral health to conditions like diabetes and heart disease.
                     `;
+                    articleImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWZLSS1xaiJ2A35kWDlmKlCnlaYqQkwgaqxQ&s';
                     break;
                 case 'article4':
+                    articleHeading = 'Understanding Gum Disease';
                     articleText = `
                         Gum disease, also known as periodontal disease, is a serious condition that can lead to tooth loss if left untreated.
                         It begins with gingivitis, where gums become inflamed and bleed easily during brushing or flossing.
                         Without proper treatment, gingivitis can progress to periodontitis, where the gums pull away from the teeth, forming pockets that trap bacteria.
                         This can lead to bone loss and, eventually, the loss of teeth.
                         Maintaining proper oral hygiene, including regular brushing, flossing, and professional cleanings, is key to preventing gum disease.
-                        Additionally, avoiding smoking and managing conditions like diabetes can reduce the risk of developing gum disease.
-                        If detected early, gum disease can be reversed with professional care, but advanced cases may require surgery.
                     `;
+                    articleImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGMFT8FoQvwghMBDK341S9MT4CmfwtcmDxBw&s';
                     break;
                 default:
                     articleText = '';
+                    articleHeading = '';
+                    articleImage = '';
                     break;
             }
 
             if (articleText) {
                 articleTextDiv.style.display = 'block';
-                articleTextDiv.innerHTML = articleText.replace(/\n/g, '<br>');
+                articleTextDiv.innerHTML = `
+                    <h2 style="font-weight: bold;">${articleHeading}</h2>
+                    <div style="display: flex; align-items: flex-start;">
+                        <div style="flex: 1; margin-right: 20px; line-height: 1.6;">
+                            ${articleText.replace(/\n/g, '<br>')}
+                        </div>
+                        <div style="flex: 0 0 200px;">
+                            <img src="${articleImage}" alt="${articleHeading}" style="max-width: 100%; height: auto; border-radius: 8px; border: rounded-md" />
+                        </div>
+                    </div>
+                `;
             } else {
                 articleTextDiv.style.display = 'none';
             }
         }
     </script>
+
     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
     </script>
     <script src="assets/js/jquery.min.js"></script>
