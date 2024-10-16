@@ -553,13 +553,13 @@ h5.logo-text {
 .main-navbar .navbar .navbar-nav .nav-item {
   position: relative;
   margin-left: 20px;
-  margin-right: 22px;
+  margin-right: 30px;
 }
 
 .main-navbar .navbar .navbar-nav .nav-item a {
   color: black;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 700;
   padding-left: 0;
   padding-right: 0;
   padding-top: 18px;
@@ -624,7 +624,7 @@ h5.logo-text {
   left: 0;
   z-index: 99;
   opacity: 0;
-  width: 230px;
+  width: 200px;
   display: block;
   border-radius: 0;
   padding: 10px 0;
@@ -648,7 +648,7 @@ h5.logo-text {
   position: relative;
   display: block;
   color: white;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
 }
 
