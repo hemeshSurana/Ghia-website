@@ -654,9 +654,9 @@
         <div
             class="button-group flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 mt-4 mb-3 p-6 gap-8">
             <a href="https://patient.rocks/Dashboard/PatientDashboard/NjhmYWU1YmUtNjVmZC00ZGQ1LTlkOWItOGZhYmIx"
-                class="w-full sm:w-auto text-center px-6 py-2.5 bg-gray-700 text-white rounded-sm hover:bg-blue-600 transition duration-300">
-                SCHEDULING
-            </a>
+                    class="w-full sm:w-auto text-center px-6 py-2.5 bg-gray-700 text-white rounded-sm hover:bg-blue-600 transition duration-300" onclick="px_openIframe(event, this.href)">
+                    SCHEDULING
+                </a>
             <a href="drghia.html"
                 class="w-full sm:w-auto text-center px-4 py-2.5 bg-gray-700 text-white rounded-sm hover:bg-blue-600 transition duration-300">
                 Dr. Ghia
@@ -725,6 +725,70 @@
             target="_blank">
             <img src="assets/image/logoleft.png" alt="patientxpress"></a>
     </p>
+
+    <!-- Floating Iframe Container -->
+    <div id="px-iframeContainer" class="px-iframe-container">
+        <span class="px-close-btn" onclick="px_closeIframe()">
+            <i class="fa-solid fa-times"></i>
+        </span>
+        <iframe id="px-demoIframe"></iframe>
+    </div>
+
+    <!-- Inject Provided CSS -->
+    <script>
+        const px_x_styleElement = document.createElement("style");
+        px_x_styleElement.innerHTML = `
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .px-iframe-container {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background-color: rgba(255, 255, 255, 0.9);
+                z-index: 1000;
+            }
+            .px-iframe-container iframe {
+                width: 95%;
+                height: 85%;
+                margin: 18vh auto;
+                display: block;
+            }
+            .px-close-btn {
+                position: absolute;
+                top: 13%;
+                right: 3%;
+                cursor: pointer;
+                font-size: 26px;
+                z-index: 999999;
+            }
+            .px-close-btn:hover {
+                font-size: 30px;
+                color: red;
+            }
+        `;
+
+        document.head.appendChild(px_x_styleElement);
+    </script>
+
+    <!-- JavaScript to Open & Close Iframe -->
+    <script>
+    function px_openIframe(event, url) {
+        event.preventDefault(); // Prevent link redirection
+        document.getElementById('px-demoIframe').src = url;
+        document.getElementById('px-iframeContainer').style.display = 'block';
+    }
+
+    function px_closeIframe() {
+        document.getElementById('px-iframeContainer').style.display = 'none';
+        document.getElementById('px-demoIframe').src = ''; // Clear iframe src
+    }
+    </script>
 
     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
     </script>
