@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dental Care </title>
-    <meta name="description"
-        content="Quality, affordable dental care in Wichita Falls. Dr. Ghia offers general, cosmetic, and implant dentistry in a comfortable setting.">
+    <meta name="description"content="Quality, affordable dental care in Wichita Falls. Dr. Ghia offers general, cosmetic, and implant dentistry in a comfortable setting.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
-                rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -38,7 +33,7 @@
 
         <div class="container mx-auto flex items-center py-2 border-gray-300 border-dashed px-4 relative">
             <a href="index.html" class="flex-shrink-0">
-                <img src="./assets/image/logo.png" class="w-36 md:w-40 lg:w-48" alt="Dental Care" />
+                <img src="assets/image/logo.png" class="w-36 md:w-40 lg:w-48" alt="Dental Care" />
             </a>
 
             <nav class="hidden lg:flex flex-1 justify-center">
@@ -312,74 +307,6 @@
                 <a href="tel:+19406928411" class="btn btn-primary block text-center">Call (940) 692-8411</a>
             </li>
         </ul>
+         </header>
 
     </header>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
-
-            // --- 1. Mobile Menu Toggler ---
-            if (mobileMenuBtn && mobileMenu) {
-                mobileMenuBtn.addEventListener('click', function () {
-                    // Toggle the 'hidden' class on the main mobile menu list
-                    mobileMenu.classList.toggle('hidden');
-                });
-            }
-
-            // --- 2. Mobile Dropdown Toggler ---
-            const dropdownButtons = document.querySelectorAll('[data-mobile-dropdown]');
-
-            dropdownButtons.forEach(button => {
-                button.addEventListener('click', function () {
-                    const targetId = button.getAttribute('data-mobile-dropdown');
-                    const targetMenu = document.getElementById(targetId + '-mobile-menu');
-                    // Find the arrow span element inside the button
-                    const arrow = button.querySelector('span'); 
-
-                    if (targetMenu) {
-                        // Toggle the 'hidden' class on the specific sub-menu
-                        targetMenu.classList.toggle('hidden');
-
-                        // Change the arrow direction 
-                        if (targetMenu.classList.contains('hidden')) {
-                            arrow.innerHTML = '▶'; // Right arrow (closed)
-                        } else {
-                            arrow.innerHTML = '▼'; // Down arrow (open)
-                        }
-                    }
-                });
-            });
-            
-            // --- 3. Close mobile menu on resize (desktop view) ---
-            window.addEventListener('resize', function() {
-                // 1024px is the 'lg' breakpoint in Tailwind
-                if (window.innerWidth >= 1024) { 
-                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
-                        
-                        // Also ensure all sub-menus are hidden when transitioning to desktop view
-                        const allSubMenus = document.querySelectorAll('#mobile-menu ul.ml-4');
-                        allSubMenus.forEach(subMenu => {
-                            subMenu.classList.add('hidden');
-                        });
-
-                        // Reset all arrows to right
-                        const allArrows = document.querySelectorAll('[data-mobile-dropdown] span');
-                        allArrows.forEach(arrow => {
-                            arrow.innerHTML = '▶';
-                        });
-                    }
-                }
-            });
-        });
-    </script>
-
-
-
-    <script>
-fetch('./components/header.html')
-  .then(res => res.text())
-  .then(data => document.getElementById('header').innerHTML = data);
-</script>
-
