@@ -31,12 +31,12 @@
             </div>
         </div>
 
-        <div class="container mx-auto flex items-center py-2 border-gray-300 border-dashed px-4 relative">
+        <div class="container mx-auto flex items-center justify-between py-2 border-gray-300 border-dashed px-4 relative">
             <a href="index.html" class="flex-shrink-0">
                 <img src="assets/image/logo.png" class="w-36 md:w-40 lg:w-48" alt="Dental Care" />
             </a>
 
-            <nav class="hidden lg:flex flex-1 justify-center">
+            <nav class="hidden lg:flex flex-1 justify-center shrink-0 whitespace-nowrap">
                 <ul id="desktop-nav-links" class="flex items-center gap-2 font-medium">
                     <li><a href="index.html" class="px-3 py-2 hover:text-primary-green transition">Home</a></li>
 
@@ -160,17 +160,16 @@
                 </ul>
             </nav>
 
-            <div class="flex items-center gap-4 md:gap-6 ml-auto">
+           <!-- CALL BUTTON + MOBILE MENU BUTTON -->
+    <div class="flex items-center gap-4 md:gap-6 flex-shrink-0">
 
-                <a href="tel:+19406928411" 
-                    class="hidden lg:inline-block 
-                        px-6 py-2 
-                        bg-teal-600 text-white font-bold rounded-full 
-                        shadow-md hover:bg-teal-700 
-                        transition duration-300">
-                    Call (940) 692-8411
-                </a>
-
+        <!-- Desktop Call Button -->
+        <a href="tel:+19406928411" 
+            class="hidden lg:inline-block px-6 py-2 bg-teal-600 text-white font-bold 
+                   rounded-full shadow-md hover:bg-teal-700 transition duration-300 whitespace-nowrap">
+            Call (940) 692-8411
+        </a>
+        <!-- Mobile Menu Button -->
                 <button id="mobile-menu-btn" 
                         class="block lg:hidden 
                             text-2xl text-slate-700 
