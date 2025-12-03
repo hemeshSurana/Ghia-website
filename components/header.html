@@ -18,7 +18,7 @@
     <header class="w-full">
         <div class="bg-primary-blue/90 backdrop-blur-sm shadow-md transition-all duration-300">
             <div
-                class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-black text-sm px-4">
+                class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-black text-sm py-1 px-4">
                 <div class="flex items-center gap-2">
                     <i class="fas fa-map-marker-alt text-black"></i>
                     <span>4501 Call Field Road, Wichita Falls, TX 76308</span>
@@ -31,24 +31,27 @@
             </div>
         </div>
 
-     <div class="w-full flex items-center justify-between backdrop-blur-md shadow-xl border border-gray-300 border-2 py-4">
- 
+     <div class="w-full flex flex-wrap items-center justify-between 
+            backdrop-blur-md shadow-xl border border-gray-300 border-2 py-4 px-4">
 
-            <a href="index.html" class="flex-shrink-0">
-                <img src="assets/image/logo.png" class="w-36 md:w-40 lg:w-48" alt="Dental Care" />
-            </a>
-               <nav class="hidden lg:flex flex-1 justify-center min-w-[600px]">
-       
-            
-                <ul id="desktop-nav-links" class="flex items-center gap-2 font-medium">
-                    <li><a href="index.html" class="px-3 py-2 hover:text-primary-green transition">Home</a></li>
+    <!-- LOGO -->
+    <a href="index.html" class="flex-shrink-0">
+        <img src="assets/image/logo.png" class="w-36 md:w-40 lg:w-48" alt="Dental Care" />
+    </a>
 
-                    <li class="relative group">
-                        <a href="#" class="px-3 py-2 hover:text-primary-green transition">Patient Information ▾</a>
-                        <div class="absolute left-0 invisible group-hover:visible group-hover:block 
-                            bg-white shadow-xl rounded-md py-2 w-56 z-50
-                            opacity-0 group-hover:opacity-100 -translate-y-2 group-hover:translate-y-0 
-                            transition-all duration-200">
+    <!-- DESKTOP NAV -->
+    <nav class="hidden lg:flex flex-1 justify-center">
+        <ul id="desktop-nav-links" class="flex flex-wrap items-center gap-3 font-medium">
+            <li><a href="index.html" class="px-3 py-2 hover:text-primary-green transition">Home</a></li>
+
+            <li class="relative group">
+                <a href="#" class="px-3 py-2 hover:text-primary-green transition">
+                    Patient Information ▾
+                </a>
+                <div class="absolute left-0 invisible group-hover:visible group-hover:block
+                    bg-white shadow-xl rounded-md py-2 w-56 z-50
+                    opacity-0 group-hover:opacity-100 -translate-y-2 group-hover:translate-y-0
+                    transition-all duration-200">
                             <a href="welcome.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Welcome</a>
                             <a href="whychooseus.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Why
                                 Choose Us</a>
@@ -304,14 +307,9 @@
                 </ul>
             </li>
 
-            <li class="border-t border-gray-100"><a href="contactus.html"
-                    class="block px-4 py-2  text-gray-700 hover:bg-gray-100">Contact Us</a></li>
-            <li class="border-t border-gray-100 pt-2 pb-4 px-4">
-                <a href="tel:+19406928411" class="btn btn-primary block flex items-center gap-4 md:gap-6 ml-auto flex-shrink text-center">Call (940) 692-8411</a>
-            </li>
+             </ul>
+    </nav>
 
-        </ul>
-        
 
+</div>
     </header>
-
