@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dental Care </title>
     <meta name="description"content="Quality, affordable dental care in Wichita Falls. Dr. Ghia offers general, cosmetic, and implant dentistry in a comfortable setting.">
-     <link rel="icon" type="image/png" href="assets/image/favicon.png">
+
+    <link rel="icon" type="image/png" href="assets/image/favicon.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"rel="stylesheet">
@@ -263,72 +265,6 @@
         </ul>
     </header>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
 
-            // 1. Toggle the main mobile menu 
-            mobileMenuBtn.addEventListener('click', () => {
-                const icon = mobileMenuBtn.querySelector('i');
-                const isMenuOpen = mobileMenu.classList.contains('max-h-screen');
-
-                if (isMenuOpen) {
-                    // Close Menu: set height to 0
-                    mobileMenu.classList.remove('max-h-screen', 'py-2', 'overflow-y-auto');
-                    mobileMenu.classList.add('max-h-0', 'py-0', 'overflow-hidden');
-                    icon.classList.remove('fa-xmark');
-                    icon.classList.add('fa-bars');
-
-                    // Close all sub-menus too when the main menu closes
-                    document.querySelectorAll('#mobile-menu ul').forEach(subMenu => {
-                        subMenu.classList.remove('max-h-screen');
-                        subMenu.classList.add('max-h-0');
-                        // Reset all arrows
-                        const parentButton = subMenu.previousElementSibling;
-                        if (parentButton) {
-                            parentButton.querySelector('.mobile-arrow').innerHTML = '▶';
-                        }
-                    });
-
-                } else {
-                    // Open Menu: set max height to screen height and allow scroll
-                    mobileMenu.classList.remove('max-h-0', 'py-0', 'overflow-hidden');
-                    mobileMenu.classList.add('max-h-screen', 'py-2', 'overflow-y-auto');
-                    icon.classList.remove('fa-bars');
-                    icon.classList.add('fa-xmark');
-                }
-            });
-
-            // 2. Toggle the nested mobile dropdowns
-            const dropdownButtons = document.querySelectorAll('[data-mobile-dropdown]');
-            dropdownButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const targetId = button.getAttribute('data-mobile-dropdown') + '-mobile-menu';
-                    const targetMenu = document.getElementById(targetId);
-                    const arrow = button.querySelector('.mobile-arrow');
-                    
-                    if (targetMenu) {
-                        const isOpen = targetMenu.classList.contains('max-h-screen');
-
-                        if (isOpen) {
-                            // Close dropdown
-                            targetMenu.classList.remove('max-h-screen');
-                            targetMenu.classList.add('max-h-0');
-                            arrow.innerHTML = '▶';
-                        } else {
-                            // Open dropdown
-                            // No longer collapsing others for better UX/simplicity
-                            targetMenu.classList.remove('max-h-0');
-                            targetMenu.classList.add('max-h-screen');
-                            arrow.innerHTML = '▼';
-                        }
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
-
-
