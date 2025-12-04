@@ -6,6 +6,11 @@
 @tailwind components;
 @tailwind utilities;
  
+#footer, #header {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 
 /* Design System & Variables */
 :root {
@@ -308,3 +313,4 @@ ul {
   }
 
 }
+
