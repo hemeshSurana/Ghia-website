@@ -9,6 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#4c6488', // Example Blue color for your top bar
+                        'primary-green': '#0097a7', // Example Green color for hover/CTA
+                    }
+                }
+            }
+        }
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -31,124 +43,82 @@
             </div>
         </div>
 
-     <div class="w-full flex flex-wrap items-center justify-between 
-            backdrop-blur-md shadow-xl border border-gray-300 border-2 py-4 px-4">
+        <div class="w-full flex flex-wrap items-center justify-between 
+            backdrop-blur-md shadow-xl border border-gray-300 border-2 py-4 px-4 bg-white z-50 relative">
 
-    <!-- LOGO -->
-    <a href="index.html" class="flex-shrink-0">
-        <img src="assets/image/logo.png" class="w-36 md:w-40 lg:w-48" alt="Dental Care" />
-    </a>
+            <a href="index.html" class="flex-shrink-0">
+                <img src="assets/image/logo.png" class="w-36 md:w-40 lg:w-48" alt="Dental Care" />
+            </a>
 
-    <!-- DESKTOP NAV -->
-    <nav class="hidden lg:flex flex-1 justify-center">
-        <ul id="desktop-nav-links" class="flex flex-wrap items-center gap-3 font-medium">
-            <li><a href="index.html" class="px-3 py-2 hover:text-primary-green transition">Home</a></li>
-
-            <li class="relative group">
-                <a href="#" class="px-3 py-2 hover:text-primary-green transition">
-                    Patient Information ▾
-                </a>
-                <div class="absolute left-0 invisible group-hover:visible group-hover:block
-                    bg-white shadow-xl rounded-md py-2 w-56 z-50
-                    opacity-0 group-hover:opacity-100 -translate-y-2 group-hover:translate-y-0
-                    transition-all duration-200">
+            <nav class="hidden lg:flex flex-1 min-w-0 justify-center">
+                <ul id="desktop-nav-links" class="flex flex-wrap items-center gap-3 font-medium">
+                    <li><a href="index.html" class="px-3 py-2 hover:text-primary-green transition">Home</a></li>
+                    <li class="relative group">
+                        <a href="#" class="px-3 py-2 hover:text-primary-green transition">Patient Information ▾</a>
+                        <div class="absolute left-0 invisible group-hover:visible group-hover:block
+                            bg-white shadow-xl rounded-md py-2 w-56 z-50
+                            opacity-0 group-hover:opacity-100 -translate-y-2 group-hover:translate-y-0
+                            transition-all duration-200">
                             <a href="welcome.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Welcome</a>
-                            <a href="whychooseus.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Why
-                                Choose Us</a>
-                            <a href="newpatients.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">New
-                                Patients</a>
-                            <a href="scheduling.html"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Scheduling</a>
-                            <a href="insuranceinformation.html"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Insurance Info</a>
-                            <a href="patientregistration.html"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Patient Registration</a>
-                            <a href="adapatienteducation.html"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">ADA Education</a>
-                            <a href="infectioncontrol.html"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Infection Control</a>
-                            <a href="advancedtechnology.html"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Advanced Technology</a>
-                            <a href="nitrousoxide.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Nitrous
-                                Oxide</a>
+                            <a href="whychooseus.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Why Choose Us</a>
+                            <a href="newpatients.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">New Patients</a>
+                            <a href="scheduling.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Scheduling</a>
+                            <a href="insuranceinformation.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Insurance Info</a>
+                            <a href="patientregistration.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Patient Registration</a>
+                            <a href="adapatienteducation.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">ADA Education</a>
+                            <a href="infectioncontrol.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Infection Control</a>
+                            <a href="advancedtechnology.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Advanced Technology</a>
+                            <a href="nitrousoxide.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Nitrous Oxide</a>
                         </div>
                     </li>
-
                     <li class="relative group">
                         <a href="#" class="px-3 py-2 hover:text-primary-green transition">Preventive Care ▾</a>
                         <div class="absolute left-0 invisible group-hover:visible group-hover:block 
                             bg-white shadow-xl rounded-md py-2 w-56 z-50
                             opacity-0 group-hover:opacity-100 -translate-y-2 group-hover:translate-y-0 
                             transition-all duration-200">
-                            <a href="dentalexamsandcheckups.html"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Dental Exams & Check-Ups</a>
-                            <a href="oralhygiene.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Oral
-                                Hygiene</a>
-                            <a href="childdentistry.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Child
-                                Dentistry</a>
-                            <a href="teethcleaning.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Teeth
-                                Cleaning</a>
-                            <a href="dentalsealants.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Dental
-                                Sealants</a>
-                            <a href="periodontalmaintenance.html"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Periodontal Maintenance</a>
-                            <a href="deepteethcleaning.html"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Deep Teeth Cleaning</a>
+                            <a href="dentalexamsandcheckups.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Dental Exams & Check-Ups</a>
+                            <a href="oralhygiene.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Oral Hygiene</a>
+                            <a href="childdentistry.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Child Dentistry</a>
+                            <a href="teethcleaning.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Teeth Cleaning</a>
+                            <a href="dentalsealants.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Dental Sealants</a>
+                            <a href="periodontalmaintenance.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Periodontal Maintenance</a>
+                            <a href="deepteethcleaning.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Deep Teeth Cleaning</a>
                         </div>
                     </li>
-
                     <li class="relative group">
                         <a href="#" class="px-3 py-2 hover:text-primary-green transition">Restorative Dentistry ▾</a>
                         <div class="absolute left-0 invisible group-hover:visible group-hover:block 
                             bg-white shadow-xl rounded-md py-2 w-56 z-50 max-h-80 overflow-y-auto
                             opacity-0 group-hover:opacity-100 -translate-y-2 group-hover:translate-y-0 
                             transition-all duration-200">
-                            <a href="dentalfillings.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Dental
-                                Fillings</a>
-                            <a href="dentalimplants.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Dental
-                                Implants</a>
-                            <a href="dentalbridges.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Dental
-                                Bridges</a>
-                            <a href="dentalcrowns.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Dental
-                                Crowns</a>
-                            <a href="nonsurgicalrootcanal.html"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Non-Surgical Root Canal</a>
-                            <a href="immediatedentures.html"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Immediate Dentures</a>
-                            <a href="implantretaindentures.html"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Implant Retained Dentures</a>
-                            <a href="partialdentures.html"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Partial Dentures</a>
-                            <a href="denturecare.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Denture
-                                Care</a>
-                            <a href="examsandmaintenance.html"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Exams & Maintenance</a>
-                            <a href="denturereliners.html"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Denture Reliners</a>
-                            <a href="rebaseandrepairs.html"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Rebase & Repairs</a>
-                            <a href="softliners.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Soft
-                                Liners</a>
+                            <a href="dentalfillings.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Dental Fillings</a>
+                            <a href="dentalimplants.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Dental Implants</a>
+                            <a href="dentalbridges.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Dental Bridges</a>
+                            <a href="dentalcrowns.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Dental Crowns</a>
+                            <a href="nonsurgicalrootcanal.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Non-Surgical Root Canal</a>
+                            <a href="immediatedentures.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Immediate Dentures</a>
+                            <a href="implantretaindentures.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Implant Retained Dentures</a>
+                            <a href="partialdentures.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Partial Dentures</a>
+                            <a href="denturecare.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Denture Care</a>
+                            <a href="examsandmaintenance.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Exams & Maintenance</a>
+                            <a href="denturereliners.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Denture Reliners</a>
+                            <a href="rebaseandrepairs.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Rebase & Repairs</a>
+                            <a href="softliners.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Soft Liners</a>
                         </div>
                     </li>
-
                     <li class="relative group">
                         <a href="#" class="px-3 py-2 hover:text-primary-green transition">Cosmetic Dentistry ▾</a>
                         <div class="absolute left-0 invisible group-hover:visible group-hover:block 
                             bg-white shadow-xl rounded-md py-2 w-56 z-50
                             opacity-0 group-hover:opacity-100 -translate-y-2 group-hover:translate-y-0 
                             transition-all duration-200">
-                            <a href="dentalbonding.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Dental
-                                Bonding</a>
-                            <a href="porcelainveneers.html"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Porcelain Veneers</a>
-                            <a href="teethwhitening.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Teeth
-                                Whitening</a>
-                            <a href="clearbraces.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Clear
-                                Braces</a>
+                            <a href="dentalbonding.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Dental Bonding</a>
+                            <a href="porcelainveneers.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Porcelain Veneers</a>
+                            <a href="teethwhitening.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Teeth Whitening</a>
+                            <a href="clearbraces.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Clear Braces</a>
                         </div>
                     </li>
-
                     <li class="relative group">
                         <a href="#" class="px-3 py-2 hover:text-primary-green transition">About Us ▾</a>
                         <div class="absolute left-0 invisible group-hover:visible group-hover:block 
@@ -156,18 +126,15 @@
                             opacity-0 group-hover:opacity-100 -translate-y-2 group-hover:translate-y-0 
                             transition-all duration-200">
                             <a href="drghia.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Dr. Ghia</a>
-                            <a href="meetthestaff.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Meet the
-                                Staff</a>
+                            <a href="meetthestaff.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Meet the Staff</a>
                         </div>
                     </li>
-
-                    <li><a href="contactus.html" class="px-3 py-2  hover:text-primary-green transition">Contact Us</a>
+                    <li><a href="contactus.html" class="px-3 py-2 hover:text-primary-green transition">Contact Us</a>
                     </li>
                 </ul>
             </nav>
 
             <div class="flex items-center gap-4 md:gap-6 ml-auto">
-
                 <a href="tel:+19406928411" 
                     class="hidden lg:inline-block 
                         px-6 py-2 
@@ -187,113 +154,179 @@
             </div>
         </div>
 
-       <ul id="mobile-menu" class="lg:hidden hidden absolute w-full bg-white shadow-xl z-40 py-2">
+        <ul id="mobile-menu" 
+            class="lg:hidden 
+                   w-full 
+                   bg-white 
+                   shadow-xl 
+                   py-0 
+                   max-h-0 
+                   overflow-hidden 
+                   transition-all 
+                   duration-300 
+                   ease-in-out z-40"> 
     
-    <li><a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a></li>
+            <li><a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a></li>
 
-    <!-- Patient Information -->
-    <li class="border-t border-gray-100">
-        <button class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-between items-center"
-            data-mobile-dropdown="patient-info">
-            Patient Information <span class="text-xs">▶</span>
-        </button>
-        <ul class="ml-4 hidden" id="patient-info-mobile-menu">
-            <li><a href="welcome.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Welcome</a></li>
-            <li><a href="whychooseus.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Why Choose Us</a></li>
-            <li><a href="newpatients.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">New Patients</a></li>
-            <li><a href="scheduling.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Scheduling</a></li>
-            <li><a href="insuranceinformation.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Insurance Info</a></li>
-            <li><a href="patientregistration.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Patient Registration</a></li>
-            <li><a href="adapatienteducation.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">ADA Education</a></li>
-            <li><a href="infectioncontrol.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Infection Control</a></li>
-            <li><a href="advancedtechnology.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Advanced Technology</a></li>
-            <li><a href="nitrousoxide.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Nitrous Oxide</a></li>
+            <li class="border-t border-gray-100">
+                <button class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-between items-center"
+                    data-mobile-dropdown="patient-info">
+                    Patient Information <span class="text-xs mobile-arrow">▶</span>
+                </button>
+                <ul class="ml-4 max-h-0 overflow-hidden transition-all duration-300 ease-in-out" id="patient-info-mobile-menu">
+                    <li><a href="welcome.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Welcome</a></li>
+                    <li><a href="whychooseus.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Why Choose Us</a></li>
+                    <li><a href="newpatients.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">New Patients</a></li>
+                    <li><a href="scheduling.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Scheduling</a></li>
+                    <li><a href="insuranceinformation.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Insurance Info</a></li>
+                    <li><a href="patientregistration.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Patient Registration</a></li>
+                    <li><a href="adapatienteducation.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">ADA Education</a></li>
+                    <li><a href="infectioncontrol.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Infection Control</a></li>
+                    <li><a href="advancedtechnology.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Advanced Technology</a></li>
+                    <li><a href="nitrousoxide.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Nitrous Oxide</a></li>
+                </ul>
+            </li>
+
+            <li class="border-t border-gray-100">
+                <button class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-between items-center"
+                    data-mobile-dropdown="preventive-care">
+                    Preventive Care <span class="text-xs mobile-arrow">▶</span>
+                </button>
+                <ul class="ml-4 max-h-0 overflow-hidden transition-all duration-300 ease-in-out" id="preventive-care-mobile-menu">
+                    <li><a href="dentalexamsandcheckups.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Dental Exams & Check-Ups</a></li>
+                    <li><a href="oralhygiene.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Oral Hygiene</a></li>
+                    <li><a href="childdentistry.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Child Dentistry</a></li>
+                    <li><a href="teethcleaning.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Teeth Cleaning</a></li>
+                    <li><a href="dentalsealants.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Dental Sealants</a></li>
+                    <li><a href="periodontalmaintenance.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Periodontal Maintenance</a></li>
+                    <li><a href="deepteethcleaning.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Deep Teeth Cleaning</a></li>
+                </ul>
+            </li>
+
+            <li class="border-t border-gray-100">
+                <button class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-between items-center"
+                    data-mobile-dropdown="restorative-dentistry">
+                    Restorative Dentistry <span class="text-xs mobile-arrow">▶</span>
+                </button>
+                <ul class="ml-4 max-h-0 overflow-hidden transition-all duration-300 ease-in-out" id="restorative-dentistry-mobile-menu">
+                    <li><a href="dentalfillings.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Dental Fillings</a></li>
+                    <li><a href="dentalimplants.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Dental Implants</a></li>
+                    <li><a href="dentalbridges.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Dental Bridges</a></li>
+                    <li><a href="dentalcrowns.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Dental Crowns</a></li>
+                    <li><a href="nonsurgicalrootcanal.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Non-Surgical Root Canal</a></li>
+                    <li><a href="immediatedentures.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Immediate Dentures</a></li>
+                    <li><a href="implantretaindentures.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Implant Retained Dentures</a></li>
+                    <li><a href="partialdentures.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Partial Dentures</a></li>
+                    <li><a href="denturecare.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Denture Care</a></li>
+                    <li><a href="examsandmaintenance.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Exams & Maintenance</a></li>
+                    <li><a href="denturereliners.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Denture Reliners</a></li>
+                    <li><a href="rebaseandrepairs.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Rebase & Repairs</a></li>
+                    <li><a href="softliners.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Soft Liners</a></li>
+                </ul>
+            </li>
+
+            <li class="border-t border-gray-100">
+                <button class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-between items-center"
+                    data-mobile-dropdown="cosmetic-dentistry">
+                    Cosmetic Dentistry <span class="text-xs mobile-arrow">▶</span>
+                </button>
+                <ul class="ml-4 max-h-0 overflow-hidden transition-all duration-300 ease-in-out" id="cosmetic-dentistry-mobile-menu">
+                    <li><a href="dentalbonding.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Dental Bonding</a></li>
+                    <li><a href="porcelainveneers.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Porcelain Veneers</a></li>
+                    <li><a href="teethwhitening.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Teeth Whitening</a></li>
+                    <li><a href="clearbraces.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Clear Braces</a></li>
+                </ul>
+            </li>
+
+            <li class="border-t border-gray-100">
+                <button class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-between items-center"
+                    data-mobile-dropdown="about-us">
+                    About Us <span class="text-xs mobile-arrow">▶</span>
+                </button>
+                <ul class="ml-4 max-h-0 overflow-hidden transition-all duration-300 ease-in-out" id="about-us-mobile-menu">
+                    <li><a href="drghia.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Dr. Ghia</a></li>
+                    <li><a href="meetthestaff.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Meet the Staff</a></li>
+                </ul>
+            </li>
+
+            <li class="border-t border-gray-100">
+                <a href="contactus.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact Us</a>
+            </li>
+
+            <li class="border-y border-gray-100 p-4">
+                <a href="tel:+19406928411"
+                    class="block px-6 py-2 bg-teal-600 text-white font-bold rounded-full text-center shadow-md hover:bg-teal-700 transition duration-300">
+                    Call (940) 692-8411
+                </a>
+            </li>
+
         </ul>
-    </li>
-
-    <!-- Preventive Care -->
-    <li class="border-t border-gray-100">
-        <button class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-between items-center"
-            data-mobile-dropdown="preventive-care">
-            Preventive Care <span class="text-xs">▶</span>
-        </button>
-        <ul class="ml-4 hidden" id="preventive-care-mobile-menu">
-            <li><a href="dentalexamsandcheckups.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Dental Exams & Check-Ups</a></li>
-            <li><a href="oralhygiene.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Oral Hygiene</a></li>
-            <li><a href="childdentistry.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Child Dentistry</a></li>
-            <li><a href="teethcleaning.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Teeth Cleaning</a></li>
-            <li><a href="dentalsealants.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Dental Sealants</a></li>
-            <li><a href="periodontalmaintenance.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Periodontal Maintenance</a></li>
-            <li><a href="deepteethcleaning.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Deep Teeth Cleaning</a></li>
-        </ul>
-    </li>
-
-    <!-- Restorative Dentistry -->
-    <li class="border-t border-gray-100">
-        <button class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-between items-center"
-            data-mobile-dropdown="restorative-dentistry">
-            Restorative Dentistry <span class="text-xs">▶</span>
-        </button>
-        <ul class="ml-4 hidden" id="restorative-dentistry-mobile-menu">
-            <li><a href="dentalfillings.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Dental Fillings</a></li>
-            <li><a href="dentalimplants.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Dental Implants</a></li>
-            <li><a href="dentalbridges.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Dental Bridges</a></li>
-            <li><a href="dentalcrowns.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Dental Crowns</a></li>
-            <li><a href="nonsurgicalrootcanal.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Non-Surgical Root Canal</a></li>
-            <li><a href="immediatedentures.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Immediate Dentures</a></li>
-            <li><a href="implantretaindentures.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Implant Retained Dentures</a></li>
-            <li><a href="partialdentures.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Partial Dentures</a></li>
-            <li><a href="denturecare.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Denture Care</a></li>
-            <li><a href="examsandmaintenance.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Exams & Maintenance</a></li>
-            <li><a href="denturereliners.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Denture Reliners</a></li>
-            <li><a href="rebaseandrepairs.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Rebase & Repairs</a></li>
-            <li><a href="softliners.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Soft Liners</a></li>
-        </ul>
-    </li>
-
-    <!-- Cosmetic Dentistry -->
-    <li class="border-t border-gray-100">
-        <button class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-between items-center"
-            data-mobile-dropdown="cosmetic-dentistry">
-            Cosmetic Dentistry <span class="text-xs">▶</span>
-        </button>
-        <ul class="ml-4 hidden" id="cosmetic-dentistry-mobile-menu">
-            <li><a href="dentalbonding.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Dental Bonding</a></li>
-            <li><a href="porcelainveneers.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Porcelain Veneers</a></li>
-            <li><a href="teethwhitening.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Teeth Whitening</a></li>
-            <li><a href="clearbraces.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Clear Braces</a></li>
-        </ul>
-    </li>
-
-    <!-- About -->
-    <li class="border-t border-gray-100">
-        <button class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-between items-center"
-            data-mobile-dropdown="about-us">
-            About Us <span class="text-xs">▶</span>
-        </button>
-        <ul class="ml-4 hidden" id="about-us-mobile-menu">
-            <li><a href="drghia.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Dr. Ghia</a></li>
-            <li><a href="meetthestaff.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Meet the Staff</a></li>
-        </ul>
-    </li>
-
-    <!-- Contact -->
-    <li class="border-t border-gray-100">
-        <a href="contactus.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact Us</a>
-    </li>
-
-    <!-- Call Button (Mobile Visible) -->
-    <li class="border-t border-gray-100">
-        <a href="tel:+19406928411"
-            class="block px-6 py-2 bg-teal-600 text-white font-bold rounded-full text-center shadow-md hover:bg-teal-700 transition duration-300">
-            Call (940) 692-8411
-        </a>
-    </li>
-
-</ul>
-    </nav>
-
-</div>
     </header>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
 
+            // 1. Toggle the main mobile menu 
+            mobileMenuBtn.addEventListener('click', () => {
+                const icon = mobileMenuBtn.querySelector('i');
+                const isMenuOpen = mobileMenu.classList.contains('max-h-screen');
+
+                if (isMenuOpen) {
+                    // Close Menu: set height to 0
+                    mobileMenu.classList.remove('max-h-screen', 'py-2', 'overflow-y-auto');
+                    mobileMenu.classList.add('max-h-0', 'py-0', 'overflow-hidden');
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+
+                    // Close all sub-menus too when the main menu closes
+                    document.querySelectorAll('#mobile-menu ul').forEach(subMenu => {
+                        subMenu.classList.remove('max-h-screen');
+                        subMenu.classList.add('max-h-0');
+                        // Reset all arrows
+                        const parentButton = subMenu.previousElementSibling;
+                        if (parentButton) {
+                            parentButton.querySelector('.mobile-arrow').innerHTML = '▶';
+                        }
+                    });
+
+                } else {
+                    // Open Menu: set max height to screen height and allow scroll
+                    mobileMenu.classList.remove('max-h-0', 'py-0', 'overflow-hidden');
+                    mobileMenu.classList.add('max-h-screen', 'py-2', 'overflow-y-auto');
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark');
+                }
+            });
+
+            // 2. Toggle the nested mobile dropdowns
+            const dropdownButtons = document.querySelectorAll('[data-mobile-dropdown]');
+            dropdownButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetId = button.getAttribute('data-mobile-dropdown') + '-mobile-menu';
+                    const targetMenu = document.getElementById(targetId);
+                    const arrow = button.querySelector('.mobile-arrow');
+                    
+                    if (targetMenu) {
+                        const isOpen = targetMenu.classList.contains('max-h-screen');
+
+                        if (isOpen) {
+                            // Close dropdown
+                            targetMenu.classList.remove('max-h-screen');
+                            targetMenu.classList.add('max-h-0');
+                            arrow.innerHTML = '▶';
+                        } else {
+                            // Open dropdown
+                            // No longer collapsing others for better UX/simplicity
+                            targetMenu.classList.remove('max-h-0');
+                            targetMenu.classList.add('max-h-screen');
+                            arrow.innerHTML = '▼';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
