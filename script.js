@@ -1,4 +1,6 @@
 // --------------------------------------
+// Load Header + Footer
+// --------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
 
     // Load Header
@@ -7,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(html => {
             document.getElementById("header").innerHTML = html;
 
-            // INIT MENU AFTER HEADER LOADED
+            // INIT MOBILE MENU AFTER HEADER LOADED
             initMobileMenu();
         });
 
@@ -18,54 +20,61 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("footer").innerHTML = html;
         });
 });
-
-
-// --------------------------------------
-// Mobile Menu Logic
-// --------------------------------------
 function initMobileMenu() {
-
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
 
-    // Mobile Menu Toggle
-    if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    }
+    if (!mobileMenuBtn || !mobileMenu) return;
 
-    // Mobile Dropdown Toggle
-    const dropdownButtons = document.querySelectorAll('[data-mobile-dropdown]');
+    // Ensure menu is hidden initially
+    mobileMenu.classList.add('hidden');
 
-    dropdownButtons.forEach(button => {
+    // Toggle main mobile menu
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+
+        // Change icon
+        const icon = mobileMenuBtn.querySelector('i');
+        if (mobileMenu.classList.contains('hidden')) {
+            icon.classList.replace('fa-xmark', 'fa-bars');
+        } else {
+            icon.classList.replace('fa-bars', 'fa-xmark');
+        }
+    });
+
+    // Toggle submenus
+    document.querySelectorAll('[data-mobile-dropdown]').forEach(button => {
+        const targetId = button.getAttribute('data-mobile-dropdown');
+        const targetMenu = document.getElementById(targetId + '-mobile-menu');
+        const arrow = button.querySelector('span');
+
+        if (!targetMenu) return;
+        // Ensure submenus are hidden initially
+        targetMenu.classList.add('hidden');
+        arrow.innerHTML = '▶';
+
         button.addEventListener('click', () => {
-            const targetId = button.getAttribute('data-mobile-dropdown');
-            const targetMenu = document.getElementById(targetId + '-mobile-menu');
-            const arrow = button.querySelector('span');
-
-            if (targetMenu) {
-                targetMenu.classList.toggle('hidden');
-                arrow.innerHTML = targetMenu.classList.contains('hidden') ? '▶' : '▼';
-            }
+            targetMenu.classList.toggle('hidden');
+            arrow.innerHTML = targetMenu.classList.contains('hidden') ? '▶' : '▼';
         });
     });
 
-    // Close menu on desktop mode
+    // Close menu on desktop resize
     window.addEventListener('resize', () => {
         if (window.innerWidth >= 1024) {
-            if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-                mobileMenu.classList.add('hidden');
+            mobileMenu.classList.add('hidden');
 
-                // Hide submenus
-                document.querySelectorAll('#mobile-menu ul.ml-4')
-                    .forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('#mobile-menu ul.ml-4')
+                .forEach(el => el.classList.add('hidden'));
 
-                // Reset arrows
-                document.querySelectorAll('[data-mobile-dropdown] span')
-                    .forEach(a => a.innerHTML = '▶');
+            document.querySelectorAll('[data-mobile-dropdown] span')
+                .forEach(a => a.innerHTML = '▶');
+
+            // Reset mobile menu icon
+            const icon = mobileMenuBtn.querySelector('i');
+            if (icon.classList.contains('fa-xmark')) {
+                icon.classList.replace('fa-xmark', 'fa-bars');
             }
         }
     });
 }
-
