@@ -60,6 +60,9 @@ body {
   color: var(--text-main);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 h1,
@@ -303,4 +306,5 @@ ul {
   .service-card {
     padding: 1rem;
   }
+
 }
