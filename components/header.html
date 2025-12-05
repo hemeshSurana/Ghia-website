@@ -264,7 +264,113 @@
 
         </ul>
     </header>
+    <style>
+
+/* ----------------------------------
+   BASE (Desktop)
+---------------------------------- */
+#desktop-nav-links li a {
+    padding: 8px 12px;
+    font-size: 10px;
+    color: #050505;
+    transition: color 0.2s ease;
+}
+
+#desktop-nav-links li a:hover {
+    color: var(--primary-green, #3ba55d);
+}
+
+/* Dropdown width */
+#desktop-nav-links .group div {
+    width: 220px !important;
+}
+
+/* ----------------------------------
+   1500px and below
+---------------------------------- */
+@media (max-width: 1500px) {
+    #desktop-nav-links {
+        gap: 2px;
+    }
+
+    #desktop-nav-links li a {
+        padding: 6px 10px;
+        font-size: 9px;
+    }
+
+    #desktop-nav-links .group div {
+        width: 200px !important;
+    }
+}
+
+/* ----------------------------------
+   1024px and below
+---------------------------------- */
+@media (max-width: 1024px) {
+    #desktop-nav-links {
+        gap: 2px;
+    }
+
+    #desktop-nav-links li a {
+        padding: 6px 8px;
+        font-size: 8px;
+    }
+
+    #desktop-nav-links .group div {
+        width: 190px !important;
+    }
+}
+
+/* ----------------------------------
+   768px and below (Hide desktop nav)
+---------------------------------- */
+@media (max-width: 768px) {
+    nav.lg\:flex {
+        display: none !important;
+    }
+}
+
+/* ----------------------------------
+   640px and below
+---------------------------------- */
+@media (max-width: 640px) {
+    #desktop-nav-links li a {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+
+    #desktop-nav-links .group div {
+        width: 180px !important;
+    }
+}
+
+/* ----------------------------------
+   480px and below
+---------------------------------- */
+@media (max-width: 480px) {
+    #desktop-nav-links {
+        gap: 4px;
+    }
+
+    #desktop-nav-links li a {
+        padding: 4px 6px;
+        font-size: 10px;
+    }
+}
+
+/* ----------------------------------
+   360px and below
+---------------------------------- */
+@media (max-width: 360px) {
+    #desktop-nav-links li a {
+        padding: 3px 4px;
+        font-size: 9px;
+    }
+}
+
+</style>
 
 
 </body>
 </html>
+
