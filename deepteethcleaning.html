@@ -22,9 +22,6 @@
                         <i class="fas fa-chart-line mr-3 text-red-600"></i> Why Deep Cleaning is Necessary
                     </h2>
 
-
-                    [Image of Gingivitis to Periodontitis progression]
-
                     <p class="text-lg text-gray-700 leading-relaxed mt-4 p-4 bg-white rounded-lg shadow-sm">
                         Scaling and Root Planing (SRP) is commonly recommended for cases ranging from Gingivitis to
                         Moderate/Severe Periodontal Disease . This intensive cleaning targets the *etiologic agents*
@@ -147,12 +144,8 @@
         <section>
             <div
                 class="button-group flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mt-8 mb-6 p-4">
+            <a onclick="openIframeModal()" class="w-full sm:w-auto text-center px-8 py-3 bg-slate-200 text-slate-800 font-bold rounded-lg shadow-md hover:bg-slate-300 transition duration-300">SCHEDULING</a>
 
-                <a href="https://shared.8px.us/book-appt/V2?license=NjhmYWU1YmUtNjVmZC00ZGQ1LTlkOWItOGZhYmIx"
-                    class="w-full sm:w-auto text-center px-8 py-3 bg-teal-600 text-white font-bold rounded-lg shadow-md hover:bg-teal-700 transition duration-300 transform hover:scale-105"
-                    onclick="px_openIframe(event, this.href)">
-                    SCHEDULING
-                </a>
 
                 <a href="drghia.html"
                     class="w-full sm:w-auto text-center px-8 py-3 bg-slate-200 text-slate-800 font-bold rounded-lg shadow-md hover:bg-slate-300 transition duration-300">
@@ -173,4 +166,102 @@
         <!-- Load Footer -->
         <div id="footer"></div>
 
-    </body>
+<style>
+/* ONLY for modal – renamed from .hidden */
+.modal-hidden {
+    display: none !important;
+}
+
+/* Modal Backdrop */
+#iframeModal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 1rem;
+}
+
+/* Modal BOX */
+#iframeModal > div {
+    background-color: white;
+    width: 100%;
+    max-width: 1300px;
+
+    /* Default Mobile height */
+    height: 90vh;
+
+    border-radius: 0.75rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Tablet */
+@media (min-width: 640px) {
+    #iframeModal > div {
+        height: 90vh;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    #iframeModal > div {
+        height: 95vh;
+    }
+}
+
+/* Close Button */
+#iframeModal button {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: #4b5563;
+    font-size: 1.875rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 50;
+    border: none;
+    background: none;
+    line-height: 1;
+}
+
+#iframeModal button:hover {
+    color: black;
+}
+
+/* IFRAME always fills modal */
+#appointmentIframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+</style>
+
+<div id="iframeModal" class="modal-hidden">
+    <div>
+        <button onclick="closeIframeModal()">×</button>
+        <iframe id="appointmentIframe" src=""></iframe>
+    </div>
+</div>
+
+<script>
+function openIframeModal() {
+    document.getElementById("appointmentIframe").src =
+        "https://shared.8px.us/book-appt/V2?license=NjhmYWU1YmUtNjVmZC00ZGQ1LTlkOWItOGZhYmIx";
+    document.getElementById("iframeModal").classList.remove("modal-hidden");
+}
+
+function closeIframeModal() {
+    document.getElementById("iframeModal").classList.add("modal-hidden");
+}
+</script>
+
+</body>
+</html> 
+
+
+
