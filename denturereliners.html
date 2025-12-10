@@ -79,10 +79,154 @@
 
     </div>
 
+<section class="bg-slate-800 py-8 md:py-12 px-4">
+            <div class="max-w-4xl mx-auto text-center">
 
+                <h3 class="text-xl md:text-3xl text-white font-bold mb-3">
+                    Ready to Start Your Healthy Smile Journey?
+                </h3>
+                <a href="tel:+19406928411" class="inline-block w-full sm:w-auto mt-2 px-8 py-3 
+                   bg-teal-600 text-white font-bold text-lg rounded-full 
+                   shadow-xl hover:bg-teal-700 
+                   transition duration-300 transform hover:scale-[1.03]">
+                    Call Us Now
+                </a>
+
+                <p class="text-gray-400 mt-4 text-sm md:text-base">
+                    You'll be happy you choose us for your dental needs!
+                </p>
+
+            </div>
+        </section>
+
+        <section>
+            <div
+                class="button-group flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mt-8 mb-6 p-4">
+
+               <a onclick="openIframeModal()" class="w-full sm:w-auto text-center px-8 py-3 bg-slate-200 text-slate-800 font-bold rounded-lg shadow-md hover:bg-slate-300 transition duration-300">SCHEDULING</a>
+
+
+                <a href="drghia.html"
+                    class="w-full sm:w-auto text-center px-8 py-3 bg-slate-200 text-slate-800 font-bold rounded-lg shadow-md hover:bg-slate-300 transition duration-300">
+                    MEET DR. GHIA
+                </a>
+
+                <a href="contactus.html"
+                    class="w-full sm:w-auto text-center px-8 py-3 bg-slate-200 text-slate-800 font-bold rounded-lg shadow-md hover:bg-slate-300 transition duration-300">
+                    CONTACT US
+                </a>
+            </div>
+
+            <div class="text-center bg-teal-600 p-3 mt-8">
+                <a href="#top" class="text-white font-semibold hover:text-gray-200 transition">Return To Top ↑</a>
+            </div>
+        </section>
+
+ 
+
+</body>         
     <script src="script.js"></script>
 </body>
 
     <!-- Load Footer -->
     <div id="footer"></div>
+<style>
+/* ONLY for modal – renamed from .hidden */
+.modal-hidden {
+    display: none !important;
+}
+
+/* Modal Backdrop */
+#iframeModal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 1rem;
+}
+
+/* Modal BOX */
+#iframeModal > div {
+    background-color: white;
+    width: 100%;
+    max-width: 1300px;
+
+    /* Default Mobile height */
+    height: 90vh;
+
+    border-radius: 0.75rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Tablet */
+@media (min-width: 640px) {
+    #iframeModal > div {
+        height: 90vh;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    #iframeModal > div {
+        height: 95vh;
+    }
+}
+
+/* Close Button */
+#iframeModal button {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: #4b5563;
+    font-size: 1.875rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 50;
+    border: none;
+    background: none;
+    line-height: 1;
+}
+
+#iframeModal button:hover {
+    color: black;
+}
+
+/* IFRAME always fills modal */
+#appointmentIframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+</style>
+
+<div id="iframeModal" class="modal-hidden">
+    <div>
+        <button onclick="closeIframeModal()">×</button>
+        <iframe id="appointmentIframe" src=""></iframe>
+    </div>
+</div>
+
+<script>
+function openIframeModal() {
+    document.getElementById("appointmentIframe").src =
+        "https://shared.8px.us/book-appt/V2?license=NjhmYWU1YmUtNjVmZC00ZGQ1LTlkOWItOGZhYmIx";
+    document.getElementById("iframeModal").classList.remove("modal-hidden");
+}
+
+function closeIframeModal() {
+    document.getElementById("iframeModal").classList.add("modal-hidden");
+}
+</script>
+
+</body>
+</html> 
+
+
+
 </html>
